@@ -1,0 +1,25 @@
+@import'variables';
+@import'mobiles';
+@import'index';
+@import'rutinas';
+@import'ejercicios';
+@import'contactos';
+@import'header';
+@import'footer';
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Spline Sans Mono', monospace;
+}
+
+.subtitle{
+    display: grid;
+    color: $principal-color;
+    height: 100px;
+    align-items: center;
+    margin-left: 50px;
+    margin-top: 10px;
+}

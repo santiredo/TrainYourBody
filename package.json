@@ -1,0 +1,22 @@
+{
+  "name": "nuevo-coder",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "node-sass --include-path sass style.scss style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/santiredo/TrainYourBody.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/santiredo/TrainYourBody/issues"
+  },
+  "homepage": "https://github.com/santiredo/TrainYourBody#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1"
+  }
+}

@@ -1,0 +1,121 @@
+.contbody{
+    @extend .index;
+}
+
+.contacto{
+    @include background;
+    display: grid;
+    grid-area: main;
+    grid-template-rows: 1fr 6fr;
+
+    &-subtitle{
+        display: grid;
+        color: $principal-color;
+        height: 100px;
+        align-items: center;
+        margin-left: 50px;
+        margin-top: 10px;
+    }
+
+    &__form{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 6fr 1fr;
+        color: $principal-color;
+        border: $principal-border;
+        border-radius: 10px;
+        margin: 20px 40px 40px 40px;
+
+        &-datos{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: 1fr;
+        }
+
+        &-1{
+            display: grid;
+            grid-template-rows: 1fr 1fr 4fr;
+            align-items: center;
+            justify-items: center;
+        }
+
+        &-2{
+            display: grid;
+            grid-template-rows: repeat(6, 1fr);
+            align-items: center;
+            justify-items: center;
+        }
+    }
+}
+
+.textarea{
+    width: 410px;
+    height: 245px;
+    border-radius: 15px;
+    border: $principal-border;
+    background: linear-gradient(to right, #141414, #0f0f0f, #141414);
+    font-family: 'Spline Sans Mono', monospace;
+    color: $principal-color;
+    font-size: 15px;
+    padding: 10px;
+}
+
+.formdivs{
+    @extend .textarea;
+    padding: 0px 10px;
+    height: 35px;
+}
+
+::placeholder{
+    color: $principal-color;
+}
+
+.sport-options{
+    background-color: black;
+    color: $principal-color;
+    border-radius: 15px;
+}
+
+.checkboxes{
+    display: grid;
+    grid-template-columns: 1fr 12fr;
+    width: 410px;
+    height: 35px;
+    align-items: center;
+    justify-items: start;
+}
+
+.submit-clean{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    &__button{
+        display: grid;
+        align-items: center;
+        justify-items: center;
+
+        & button{
+            @extend .formdivs;
+
+            &:hover{
+                animation-name: clean_send;
+                animation-timing-function: linear;
+                animation-duration: 0.2s;
+                animation-fill-mode: forwards;
+                animation-iteration-count: 1;
+        
+                @keyframes clean_send{
+                    0% {
+                        box-shadow: 0 0 0 0 $principal-color;
+                        transform: scale(1) translateX(0) translateY(0);
+                    }
+                
+                    100% {
+                        box-shadow: 0px 5px 20px 0px #757575;
+                        transform: scale(1.1) translateY(-3px);
+                    }
+                }
+            }
+        }
+    }
+}

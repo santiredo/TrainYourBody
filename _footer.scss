@@ -1,0 +1,78 @@
+.footer{
+    display: grid;
+    grid-area: footer;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    background: linear-gradient(#181818,black);
+    align-items: center;
+    margin: 0px;
+    padding: 20px;
+    border-top: $principal-border;
+
+    &__sn{
+        margin-left: 10px;
+        padding-left: 50px;
+        padding-top: 0px;
+
+        & a{
+            text-decoration: none;
+        }
+
+        &-link{
+            display: grid;
+            grid-template-columns: 64px 1fr;
+            gap: 10px;
+            align-items: end;
+
+            & p{
+                display: inline-block;
+                color: $principal-color;
+                margin-bottom: 0px;
+            }
+
+            &:hover{
+                animation: RRSS 1.5s ease 0.25 normal none;
+
+                @keyframes RRSS {
+                    0%,
+                    100% {
+		            transform: rotate(0deg);
+		            transform-origin: 0 50%;
+	                }
+                    10% {
+		            transform: rotate(2deg);
+	                }
+                    20%,
+                    40%,
+                    60% {
+                        transform: rotate(-4deg);
+                    }
+                    30%,
+                    50%,
+                    70% {
+                        transform: rotate(4deg);
+                    }
+                    80% {
+                        transform: rotate(-2deg);
+                    }
+                    90% {
+                        transform: rotate(2deg);
+                    }
+                }
+
+                $footer: (
+                    instagram: #C13584,
+                    facebook: #3b5998,
+                    twitter: #00acee
+                );
+
+                @each $name, $color in $footer {
+                    .link-#{$name}{
+                        color: $color;
+                    }
+                }
+            }
+        }
+    }
+    
+}

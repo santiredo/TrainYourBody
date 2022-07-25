@@ -1,0 +1,56 @@
+.ejercicios{
+    @extend .index;
+
+    &__main{
+        @include background;
+        display: grid;
+        grid-area: main;
+        grid-template-rows: 1fr 9fr;
+
+        &-section{
+            display: grid;
+            grid-template-columns: 5fr 9fr;
+            gap: 20px;
+            padding: 20px 40px 40px 40px;
+        }
+    }
+
+    &-subtitle{
+        display: grid;
+        color: $principal-color;
+        height: 100px;
+        align-items: center;
+        margin-left: 50px;
+        margin-top: 10px;
+    }
+}
+
+
+.muscles{
+    text-align: left;
+    color: $principal-color;
+    padding: 20px;
+    border-radius: 10px;
+    border: $principal-border;
+
+    & li{
+        background: linear-gradient(#0f0f0f,#050505,#0f0f0f);
+        display: block;
+        border-radius: 10px;
+        padding: 10px;
+    }
+}
+
+.list{
+    list-style-type: none;
+}
+
+.videos{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+}
+
+.mobile-videos{
+    display: none;
+}

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TrainYourBody | Ejercicios de musculacion</title>
+    <meta name="description" content="Aqui encontraras los mejores ejercicios de fuerza para incorporar a tus rutinas. Elije la zona que quieras entrenar y escoge el ejercicio que mas te guste">
+    <link rel="shortcut icon" href="../images/workout.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Spline+Sans+Mono:wght@600&display=swap" rel="stylesheet">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body class="ejercicios">
+    <header class="header">
+        <div class="header__title">
+            <a href="../index.html">
+                <h1>TRAIN YOUR BODY</h1>
+                <img src="../images/workout.png" alt="icono de TYB">
+            </a>
+        </div>        
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <img src="../images/nav_bar.png" alt="">
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <a href="../pages/rutinas.html">RUTINAS</a>
+                    <a href="../pages/ejercicios.html">EJERCICIOS</a>
+                    <a href="../pages/contacto.html">CONTACTOS</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="ejercicios__main">
+        <section class="ejercicios-subtitle">
+            <h2>ELIGE UNA ZONA DEL CUERPO</h2>
+            <p>Aqui encontraras los mejores ejercicios para que puedas armar tu propia rutina</p>
+        </section>
+        <section class="ejercicios__main-section">
+            <!-- MI IDEA DE ESTA LISTA ES QUE SEA DESPLEGABLE,
+            POR EJEMPLO: TOCAR EN ZONA MEDIA Y QUE SE DESPLEGUEN
+            LAS OPCIONES DE ABDOMINALES Y LUMBARES (COMO LUMBARES
+            NO TIENE SUBMENUES SE TOCARIA EN ESE ITEM DE LA LISTA
+            Y APARECERIAN VIDEOS PARA ENTRENAR ESA ZONA), Y PARA 
+            ABDOMINALES SE ABRIRIAN OTROS 2 SUBMENUES MAS, LOS 
+            CUALES AL CLICKEARLOS APARECERIAN LOS VIDEOS DEL MUSCULO
+            ELEGIDO, Y ASI CON LAS DEMAS SECCIONES DE LA LISTA. -->
+            <!-- TANTO EN DESKTOP COMO EN TABLET (768PX) LOS VIDEOS APARECERIAN
+            AL COSTADO EN LA SECCION DE VIDEOS, PERO EN LA VERSION MOBILE
+            APARECERIAN DEBAJO EN UNA SECCION DONDE CABERIAN DE A 3 Y SE
+            IRIAN DESPLEGANDO UNO POR UNO A MEDIDA QUE SE CLICKEE EN ALGUNA
+            DE LAS 2 FLECHAS -->
+            <div>
+                <ul class="muscles" >
+                    <li class="zones">ZONA MEDIA
+                        <ul class="list">
+                            <li>ABDOMINALES
+                                <ul class="list">
+                                    <li>RECTO ANTERIOR</li>
+                                    <li>OBLICUOS</li>
+                                </ul>
+                            </li>
+                            <li>LUMBARES</li>
+                        </ul>
+                    </li>
+                    <li class="zones">TORSO
+                        <ul class="list">
+                            <li>ESPALDA
+                                <ul class="list">
+                                    <li>DORSALES</li>
+                                    <li>TRAPECIOS</li>
+                                </ul>
+                            </li>
+                            <li>PECTORALES</li>
+                        </ul>
+                    </li>
+                    <li class="zones">PIERNAS
+                        <ul class="list">
+                            <li>GLUTEOS
+                                <ul class="list">
+                                    <li>GLUTEO MAYOR</li>
+                                    <li>GLUTEO MEDIO</li>
+                                </ul>
+                            </li>
+                            <li>CUADRICEPS</li>
+                            <li>ISQUIOS</li>
+                            <li>GEMELOS</li>
+                        </ul>
+                    </li>
+                    <li class="zones">BRAZOS
+                        <ul class="list">
+                            <li>HOMBROS
+                                <ul class="list">
+                                    <li>DELTOIDES ANTERIOR</li>
+                                    <li>DELTOIDES LATERAL</li>
+                                    <li>DELTOIDES POSTERIOR</li>
+                                </ul>
+                            </li>
+                            <li>BICEPS</li>
+                            <li>TRICEPS</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="videos">
+            </div>
+            <div class="mobile-videos">
+                <div>
+                    <img src="../images/flecha-arriba.png" alt="flecha hacia arriba">
+                </div>
+                <div>EN TOTAL SERIAN 8 VIDEOS QUE VAN APARECIENDO A MEDIDA QUE SE TOCA EN ALGUNA DE LAS 2 FLECHAS</div>
+                <div>APARECEN LOS VIDEOS DE A 3 PERO CUANDO SE TOCA LA FLECHA AVANZAN DE A 1</div>
+                <div></div>
+                <div>
+                    <img src="../images/flecha-abajo.png" alt="flecha hacia abajo">
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer__sn">
+            <a href="https://www.instagram.com/" >
+                <div class="footer__sn-link">
+                    <img src="../images/instagram.png" alt="icono de instagram">
+                    <p class="link-instagram">@INSTAGRAM</p>
+                </div>
+            </a>
+        </div>
+        <div class="footer__sn">
+            <a href="https://www.facebook.com/">
+                <div class="footer__sn-link">
+                    <img src="../images/facebook.png" alt="icono de facebook">
+                    <p class="link-facebook">@FACEBOOK</p>
+                </div>
+            </a>
+        </div>
+        <div class="footer__sn">
+            <a href="https://www.twitter.com/">
+                <div class="footer__sn-link">
+                    <img src="../images/twitter.png" alt="icono de twitter">
+                    <p class="link-twitter">@TWITTER</p>
+                </div>
+            </a>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,7 @@
+$principal-color: white;
+$principal-font: 'Spline Sans Mono', monospace;
+$principal-border: solid salmon;
+
+@mixin background {
+    background: linear-gradient(#181818,#242323,#181818);
+}

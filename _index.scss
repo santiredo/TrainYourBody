@@ -1,0 +1,344 @@
+.index{
+    display: grid;
+    grid-template-areas:
+    "header"
+    "main"
+    "footer";
+    font-family: $principal-font;
+
+	&__main{
+		@include background;
+		display: grid;
+		grid-area: main;
+		
+		&-section1{
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			grid-template-rows: 1fr;
+			border-bottom: $principal-border;
+			align-items: center;
+			justify-items: center;
+			padding: 20px 15px 0px 15px;
+
+			& div{
+				height: 100%;
+				width: 100%;
+				text-align: center;
+				text-justify: center;
+				animation: main-img1 3s linear 0s 1 normal none;
+				border-radius: 15px;
+			}
+
+			&--img1{
+				width: 95%;
+				height: 95%;
+				border-radius: 15px;
+				animation: main-img1 3s linear 0s 1 normal none;
+
+				@keyframes main-img1 {
+					0% {
+						animation-timing-function: ease-in;
+						opacity: 1;
+						transform: translateY(-45px);
+					}
+				
+					24% {
+						opacity: 1;
+					}
+				
+					40% {
+						animation-timing-function: ease-in;
+						transform: translateY(-24px);
+					}
+				
+					65% {
+						animation-timing-function: ease-in;
+						transform: translateY(-12px);
+					}
+				
+					82% {
+						animation-timing-function: ease-in;
+						transform: translateY(-6px);
+					}
+				
+					93% {
+						animation-timing-function: ease-in;
+						transform: translateY(-4px);
+					}
+				
+					25%,
+					55%,
+					75%,
+					87% {
+						animation-timing-function: ease-out;
+						transform: translateY(0px);
+					}
+				
+					100% {
+						animation-timing-function: ease-out;
+						opacity: 1;
+						transform: translateY(0px);
+					}
+				}
+			}
+
+			&--img2{
+				width: 95%;
+				height: 95%;
+				border-radius: 15px;
+				animation: main-img2 3s linear 80ms 1 normal none;
+
+				@keyframes main-img2 {
+					0% {
+						animation-timing-function: ease-in;
+						opacity: 1;
+						transform: translateY(-45px);
+					}
+				
+					24% {
+						opacity: 1;
+					}
+				
+					40% {
+						animation-timing-function: ease-in;
+						transform: translateY(-24px);
+					}
+				
+					65% {
+						animation-timing-function: ease-in;
+						transform: translateY(-12px);
+					}
+				
+					82% {
+						animation-timing-function: ease-in;
+						transform: translateY(-6px);
+					}
+				
+					93% {
+						animation-timing-function: ease-in;
+						transform: translateY(-4px);
+					}
+				
+					25%,
+					55%,
+					75%,
+					87% {
+						animation-timing-function: ease-out;
+						transform: translateY(0px);
+					}
+				
+					100% {
+						animation-timing-function: ease-out;
+						opacity: 1;
+						transform: translateY(0px);
+					}
+				}
+			}
+
+			&--img3{
+				width: 95%;
+				height: 95%;
+				border-radius: 15px;
+				animation: main-img3 3s linear 40ms 1 normal none;
+
+				@keyframes main-img3 {
+					0% {
+						animation-timing-function: ease-in;
+						opacity: 1;
+						transform: translateY(-45px);
+					}
+				
+					24% {
+						opacity: 1;
+					}
+				
+					40% {
+						animation-timing-function: ease-in;
+						transform: translateY(-24px);
+					}
+				
+					65% {
+						animation-timing-function: ease-in;
+						transform: translateY(-12px);
+					}
+				
+					82% {
+						animation-timing-function: ease-in;
+						transform: translateY(-6px);
+					}
+				
+					93% {
+						animation-timing-function: ease-in;
+						transform: translateY(-4px);
+					}
+				
+					25%,
+					55%,
+					75%,
+					87% {
+						animation-timing-function: ease-out;
+						transform: translateY(0px);
+					}
+				
+					100% {
+						animation-timing-function: ease-out;
+						opacity: 1;
+						transform: translateY(0px);
+					}
+				}
+			}
+		}
+
+		&section2{
+			display: grid;
+			grid-template-rows: 1fr 7fr;
+			border-bottom: solid salmon;
+			padding-bottom: 20px;
+		}
+	}
+}
+
+.sportimages{
+	display: flex;
+	justify-content: center;
+	padding-bottom: 20px;
+	border-bottom: $principal-border;
+}
+
+.carousel{
+	width: 50%;
+}
+
+.carousel__div-image{
+	width: 100%;
+	height: 100%;
+    border-radius: 30px;
+    border: $principal-border;
+}
+
+.carousel-inner:hover{
+    animation: carousel__anim 1s ease 0s 1 normal backwards;
+}
+
+@keyframes carousel__anim {
+	0% {
+		transform: scale(1);
+	}
+
+	50% {
+		transform: scale(1.2);
+	}
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+// ESTA PARTE HACE REFERENCIA AL CARUSEL DEL INDEX
+
+.name__sport{
+    display: flex;
+    justify-content: center;
+    color: $principal-color;
+    border-radius: 15px;
+    border: $principal-border;
+    border-top: none;
+}
+
+.flecha__carousel{
+    background-color: #0f0f0f;
+    border-radius: 35px;
+    border: solid #050505;
+    width: 80%;
+}
+
+.image-link{
+    display: grid;
+    align-self: end;
+    height: 90%;
+    width: 100%;
+}
+
+.fut-img-link{
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+    border: $principal-border;
+}
+
+.sport-link{
+    display: grid;
+    align-self: start;
+    text-decoration: none;
+    border-radius: 20px;
+    border: $principal-border;
+    border-top: none;
+}
+
+.card_index_title{
+    color: $principal-color;
+    font-size: 50px;
+    padding: 0px 10px;
+}
+
+/* tercera seccion del index (atajo de ejercicios) */
+
+.index__main-section3{
+    display: grid;
+    grid-template-rows: 1fr 3.5fr;
+}
+
+.ejercicios-index{
+    display: flex;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+    justify-items: center;
+	justify-content: space-evenly;
+
+	& article{
+		border-radius: 15px;
+		border: $principal-border;
+		width: 20%;
+		height: 80%;
+
+		&:hover{
+			animation: article__index 1s linear 0s 1 normal ;
+
+			@keyframes article__index {
+				0% {
+					transform: translateX(0);
+				}
+			
+				50% {
+					transform: translateX(20px);
+				}
+
+				100% {
+					transform: translateX(0);
+				}
+			}
+		}
+
+		& a{
+			text-decoration: none;
+			display: grid;
+			justify-items: center;
+			align-items: center;
+			height: 100%;
+			width: 100%;
+			display: grid;
+			grid-template-rows: 4fr 1fr;
+
+			& video{
+				width: 200px;
+				height: 200px;
+				border-radius: 15px;
+			}
+
+			& h3{
+				margin-bottom: 0;
+				color: $principal-color;
+			}
+		}
+	}
+}

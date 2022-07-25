@@ -1,0 +1,21 @@
+SEO de mi proyecto
+
+Agregue la etiqueta title, una para cada pagina:
+
+	INDEX.HTML >> <title>TrainYourBody | Rutinas y ejercicios de fuerza y musculacion</title>
+
+	RUTINAS.HTML >> <title>TrainYourBody | Rutinas especiales</title>
+
+	EJERCICIOS.HTML >> <title>TrainYourBody | Ejercicios de musculacion</title>
+
+	CONTACTO.HTML >> <title>TrainYourBody | Contactos</title>
+
+Agregue la metaetiqueta description, una para cada pagina:
+
+	INDEX.HTML >> <meta name="description" content="Rutinas especiales para tu deporte y ejercicios de fuerza y musculacion. MEJORA TU RENDIMIENTO DEPORTIVO Y/O ARMA TU PROPIA RUTINA">
+
+	RUTINAS.HTML >> <meta name="description" content="En esta seccion encontraras rutinas de fuerza y potencia especiales para tu deporte y asi mejorar el rendimiento">
+
+	EJERCICIOS.HTML >> <meta name="description" content="Aqui encontraras los mejores ejercicios de fuerza para incorporar a tus rutinas. Elije la zona que quieras entrenar y escoge el ejercicio que mas te guste">
+
+	CONTACTO.HTML >> <meta name="description" content="Contactese con nuestro grupo de entrenadores y te asesoraremos en tu entrenamiento para que obtengas los mejores resultados">
