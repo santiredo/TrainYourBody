@@ -347,7 +347,7 @@
   border-radius: 30px;
   border: solid salmon; }
 
-.carousel-inner:hover {
+.carousel__index:hover {
   animation: carousel__anim 1s ease 0s 1 normal backwards; }
 
 @keyframes carousel__anim {
@@ -480,14 +480,14 @@
   100% {
     box-shadow: 12px 12px 20px -12px white;
     transform: scale(1.1) translateX(-10px) translateY(-10px); } }
-  .sports__link {
-    width: 100%;
-    height: 100%;
-    display: grid;
-    align-items: center;
-    justify-items: center;
-    text-decoration: none;
-    gap: 30px; }
+
+.carousel-rutinas {
+  width: 100%; }
+
+.card {
+  background: linear-gradient(#181818, #242323, #181818);
+  width: 550px;
+  height: auto; }
 
 .card_title {
   color: white;

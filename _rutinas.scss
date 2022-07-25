@@ -54,18 +54,17 @@
             }
         }
     }
-
-    &__link{
-        width: 100%;
-        height: 100%;
-        display: grid;
-        align-items: center;
-        justify-items: center;
-        text-decoration: none;
-        gap: 30px;
-    }
 }
 
+.carousel-rutinas{
+    width: 100%;
+}
+
+.card{
+    @include background;
+    width: 550px;
+    height: auto;
+}
 
 .card_title{
     color: $principal-color;
