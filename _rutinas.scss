@@ -60,10 +60,21 @@
     width: 100%;
 }
 
-.card{
+.rutinas-card{
     @include background;
-    width: 550px;
-    height: auto;
+    width: 500px;
+    height: 260px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.imagen-rutina{
+    width: 500px;
+    height: 260px;
+}
+
+.collapse{
+    border: none;
 }
 
 .card_title{

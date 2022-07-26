@@ -1,203 +1,3 @@
-@media screen and (max-width: 768px) {
-  /* HEADER GENERICO */
-  .header {
-    grid-template-columns: 4fr 1fr;
-    width: 100%; }
-  .header__title a {
-    display: grid;
-    align-items: center; }
-  .subtitle {
-    padding-bottom: 0px;
-    margin-left: 40px;
-    margin-top: 0px;
-    margin-right: 20px; }
-  .rutinas__main-subtitle {
-    padding-bottom: 0px;
-    gap: 10px;
-    margin-top: 20px;
-    margin-left: 40px; }
-  .ejercicios-subtitle {
-    padding-bottom: 0px;
-    gap: 10px;
-    margin-top: 20px;
-    margin-left: 40px; }
-  /* INDEX */
-  .index__main-section1 {
-    grid-template-rows: repeat(3, 1fr);
-    grid-template-columns: 1fr;
-    height: 100%;
-    width: 100%; }
-    .index__main-section1 div {
-      height: 100%; }
-  .index__main-section2 {
-    grid-template-rows: 1fr 4fr;
-    width: 100%;
-    height: 100%;
-    padding-bottom: 0px; }
-  .carousel {
-    width: 80%; }
-  .flechitas768px {
-    height: 64px;
-    width: 64px; }
-  .image-link {
-    height: 100%; }
-  .card_index_title {
-    font-size: 30px; }
-  .index__main-section3 {
-    grid-template-rows: 1fr 5fr;
-    width: 100%;
-    border-bottom: none; }
-  .ejercicios-index {
-    display: grid;
-    padding: 0 100px;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr); }
-    .ejercicios-index article {
-      width: 250px;
-      height: 250px; }
-      .ejercicios-index article a video {
-        width: 150px;
-        height: 150px; }
-  /* RUTINAS.HTML */
-  .rutinas__main {
-    grid-template-rows: 1fr 10fr;
-    padding-bottom: 20px;
-    padding-left: 40px;
-    padding-right: 40px; }
-  .rutinas__main-section {
-    grid-template-columns: repeat(2, 1fr); }
-  /* CONTACTO.HTML */
-  .maincontact {
-    grid-template-rows: 1fr 7fr; }
-  .contactform {
-    grid-template-columns: 1fr;
-    grid-template-rows: 6fr 1fr;
-    padding: 0px;
-    gap: none; }
-  .formulario {
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(2, 1fr); }
-  .submit-clean {
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(2, 1fr); }
-  /* FOOTER GENERICO */
-  .footer {
-    width: 100%;
-    padding-left: 0px;
-    padding-right: 0px; } }
-
-@media screen and (max-width: 425px) {
-  /* HEADER GENERICO */
-  .header__title a h1 {
-    display: none; }
-  .header {
-    height: 100%; }
-  .header__title a img {
-    display: block; }
-  .header__nav nav a {
-    display: none; }
-  .header__nav {
-    display: none;
-    height: 80px; }
-  .header__nav-mobile {
-    display: grid;
-    align-self: center;
-    justify-self: end;
-    height: 80px; }
-  /* SUBTITLE */
-  /* INDEX */
-  .index__main-section2 {
-    display: grid;
-    grid-template-rows: 1fr 2.5fr;
-    gap: 10px;
-    border-bottom: solid salmon; }
-  .carousel__smaller {
-    margin: 0px 100px; }
-  .sportimages {
-    height: 50%;
-    border: none; }
-  .carousel-control-prev {
-    height: 228.66px;
-    width: 20%; }
-  .carousel-control-next {
-    height: 228.66px;
-    width: 20%; }
-  .index__main-section3 {
-    padding: 0;
-    grid-template-rows: 1fr 4.5fr; }
-  .ejercicios-index article {
-    height: 90%;
-    width: 90%; }
-  /* RUTINAS.HTML */
-  .rutinas__main {
-    grid-template-rows: 1fr 15fr; }
-  .rutinas__main-subtitle {
-    padding: 10px 0px 0px 0px;
-    font-size: 20px;
-    height: 100%;
-    margin: 0px;
-    gap: 0px; }
-  .rutinas__main-section {
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(8, 1fr);
-    padding: 10px 0px 0px 0px; }
-  /* EJERCICIOS.HTML */
-  .mainexercises {
-    padding: 0px 40px 20px 40px; }
-  .ejercicios-subtitle {
-    padding: 10px 0px 0px 0px;
-    font-size: 20px;
-    height: 100%;
-    margin: 0px;
-    gap: 0px; }
-  .choosezone {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(2, 1fr);
-    padding: 0px; }
-  .videos {
-    display: none; }
-  .mobile-videos {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr repeat(3, 3fr) 1fr;
-    align-items: center;
-    justify-items: center;
-    border-radius: 10px;
-    border: solid salmon;
-    color: white; }
-  /* CONTACTO.HTML */
-  .maincontact {
-    grid-template-rows: 1fr 4fr;
-    padding: 0px 40px 20px 40px; }
-  .contacto-subtitle {
-    padding: 10px 0px 0px 0px;
-    font-size: 20px;
-    height: 250px;
-    margin: 0px;
-    gap: 0px; }
-  .contactform {
-    margin: 0px;
-    padding: 0px; }
-  .formdivs, .submit-clean__button button {
-    width: 90%; }
-  .textarea, .formdivs, .submit-clean__button button {
-    width: 90%; }
-  .checkboxes {
-    width: 90%; }
-  .clean-send {
-    width: 90%; }
-  /* FOOTER GENERICO */
-  .footer {
-    padding-right: 30px;
-    padding-left: 30px;
-    justify-items: center; }
-  .footer__sn {
-    margin: 0px;
-    padding: 0px; }
-  .footer__sn a p {
-    display: none; } }
-
 .index, .rutinas, .ejercicios, .contbody {
   display: grid;
   grid-template-areas: "header" "main" "footer";
@@ -484,10 +284,19 @@
 .carousel-rutinas {
   width: 100%; }
 
-.card {
+.rutinas-card {
   background: linear-gradient(#181818, #242323, #181818);
-  width: 550px;
-  height: auto; }
+  width: 500px;
+  height: 260px;
+  margin: 0px;
+  padding: 0px; }
+
+.imagen-rutina {
+  width: 500px;
+  height: 260px; }
+
+.collapse {
+  border: none; }
 
 .card_title {
   color: white;
@@ -529,10 +338,18 @@
 .list {
   list-style-type: none; }
 
+.ejercicios-card {
+  width: 100%;
+  height: 100%; }
+
 .videos {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(4, 1fr); }
+  border-radius: 15px;
+  border: solid salmon;
+  width: 400px;
+  height: 400px; }
+
+.btn {
+  border: none; }
 
 .mobile-videos {
   display: none; }
@@ -722,6 +539,204 @@
           color: #3b5998; }
         .footer__sn-link:hover .link-twitter {
           color: #00acee; }
+
+@media screen and (max-width: 768px) {
+  /* HEADER GENERICO */
+  .header {
+    grid-template-columns: 4fr 1fr;
+    width: 100%; }
+  .header__title a {
+    display: grid;
+    align-items: center; }
+  .subtitle {
+    padding-bottom: 0px;
+    margin-left: 40px;
+    margin-top: 0px;
+    margin-right: 20px; }
+  .rutinas__main-subtitle {
+    padding-bottom: 0px;
+    gap: 10px;
+    margin-top: 20px;
+    margin-left: 40px; }
+  .ejercicios-subtitle {
+    padding-bottom: 0px;
+    gap: 10px;
+    margin-top: 20px;
+    margin-left: 40px; }
+  /* INDEX */
+  .index__main-section1 {
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: 1fr;
+    height: 100%;
+    width: 100%; }
+    .index__main-section1 div {
+      height: 100%; }
+  .index__main-section2 {
+    grid-template-rows: 1fr 4fr;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 0px; }
+  .carousel {
+    width: 80%; }
+  .flechitas768px {
+    height: 64px;
+    width: 64px; }
+  .image-link {
+    height: 100%; }
+  .card_index_title {
+    font-size: 30px; }
+  .index__main-section3 {
+    grid-template-rows: 1fr 5fr;
+    width: 100%;
+    border-bottom: none; }
+  .ejercicios-index {
+    display: grid;
+    padding: 0 100px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr); }
+    .ejercicios-index article {
+      width: 250px;
+      height: 250px; }
+      .ejercicios-index article a video {
+        width: 150px;
+        height: 150px; }
+  /* RUTINAS.HTML */
+  .rutinas__main {
+    grid-template-rows: 1fr 15fr;
+    padding-bottom: 20px;
+    padding-left: 40px;
+    padding-right: 40px; }
+  .rutinas__main-section {
+    grid-template-columns: repeat(2, 1fr); }
+  .imagen-rutina {
+    width: 120%;
+    height: 140%; }
+  /* CONTACTO.HTML */
+  .maincontact {
+    grid-template-rows: 1fr 7fr; }
+  .contactform {
+    grid-template-columns: 1fr;
+    grid-template-rows: 6fr 1fr;
+    padding: 0px;
+    gap: none; }
+  .formulario {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr); }
+  .submit-clean {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr); }
+  /* FOOTER GENERICO */
+  .footer {
+    width: 100%;
+    padding-left: 0px;
+    padding-right: 0px; } }
+
+@media screen and (max-width: 425px) {
+  /* HEADER GENERICO */
+  .header__title a h1 {
+    display: none; }
+  .header__title a img {
+    display: inline-block; }
+  .header {
+    height: 100%; }
+  .header__nav nav a {
+    display: none; }
+  .header__nav {
+    display: none;
+    height: 80px; }
+  .header__nav-mobile {
+    display: grid;
+    align-self: center;
+    justify-self: end;
+    height: 80px; }
+  /* SUBTITLE */
+  /* INDEX */
+  .index__main-section2 {
+    display: grid;
+    grid-template-rows: 1fr 2.5fr;
+    gap: 10px; }
+  .carousel__smaller {
+    margin: 0px 100px; }
+  .sportimages {
+    height: 100%; }
+  .carousel-control-prev {
+    height: 228.66px;
+    width: 20%; }
+  .carousel-control-next {
+    height: 228.66px;
+    width: 20%; }
+  .index__main-section3 {
+    padding: 0;
+    grid-template-rows: 1fr 4.5fr; }
+  .ejercicios-index {
+    padding: 0 30px; }
+    .ejercicios-index article {
+      height: 90%;
+      width: 90%; }
+  /* RUTINAS.HTML */
+  .rutinas__main {
+    grid-template-rows: 1fr 15fr; }
+  .rutinas__main-subtitle {
+    padding: 10px 0px 0px 0px;
+    font-size: 20px;
+    height: 100%;
+    margin: 0px;
+    gap: 0px; }
+  .rutinas__main-section {
+    grid-template-columns: 1fr; }
+  /* EJERCICIOS.HTML */
+  .ejercicios__main {
+    padding: 0px 40px 20px 40px; }
+    .ejercicios__main-section {
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(2, 1fr);
+      padding: 0px; }
+  .ejercicios-subtitle {
+    padding: 10px 0px 0px 10px;
+    font-size: 20px;
+    height: 100%;
+    margin: 0px;
+    gap: 0px; }
+    .ejercicios-subtitle h2 {
+      margin: 0px; }
+    .ejercicios-subtitle p {
+      margin: 0px; }
+  .choosezone {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    padding: 0px; }
+  /* CONTACTO.HTML */
+  .maincontact {
+    grid-template-rows: 1fr 4fr;
+    padding: 0px 40px 20px 40px; }
+  .contacto-subtitle {
+    padding: 10px 0px 0px 0px;
+    font-size: 20px;
+    height: 250px;
+    margin: 0px;
+    gap: 0px; }
+  .contactform {
+    margin: 0px;
+    padding: 0px; }
+  .formdivs, .submit-clean__button button {
+    width: 90%; }
+  .textarea, .formdivs, .submit-clean__button button {
+    width: 90%; }
+  .checkboxes {
+    width: 90%; }
+  .clean-send {
+    width: 90%; }
+  /* FOOTER GENERICO */
+  .footer {
+    padding-right: 30px;
+    padding-left: 30px;
+    justify-items: center; }
+  .footer__sn {
+    margin: 0px;
+    padding: 0px; }
+  .footer__sn a p {
+    display: none; } }
 
 * {
   margin: 0;

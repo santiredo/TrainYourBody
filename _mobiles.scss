@@ -94,7 +94,7 @@
     /* RUTINAS.HTML */
 
     .rutinas__main{
-        grid-template-rows: 1fr 10fr;
+        grid-template-rows: 1fr 15fr;
         padding-bottom: 20px;
         padding-left: 40px;
         padding-right: 40px;
@@ -102,6 +102,11 @@
 
     .rutinas__main-section{
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .imagen-rutina{
+        width: 120%;
+        height: 140%;
     }
 
     /* CONTACTO.HTML */
@@ -138,16 +143,19 @@
 @media screen and (max-width: 425px){
 
     /* HEADER GENERICO */
-    .header__title a h1{
+    .header__title a{
+        
+        & h1{
         display: none;
+        }
+
+        & img{
+            display: inline-block;
+        }
     }
 
     .header{
         height: 100%;
-    }
-
-    .header__title a img{
-        display: block;
     }
 
     .header__nav nav a{
@@ -169,11 +177,11 @@
     /* SUBTITLE */
 
     /* INDEX */
+
     .index__main-section2{
         display: grid;
         grid-template-rows: 1fr 2.5fr;
         gap: 10px;
-        border-bottom: $principal-border;
     }
 
     .carousel__smaller{
@@ -181,8 +189,7 @@
     }
 
     .sportimages{
-        height: 50%;
-        border: none;
+        height: 100%;
     }
 
     .carousel-control-prev{
@@ -201,6 +208,7 @@
     }
 
     .ejercicios-index{
+        padding: 0 30px ;
 
         & article{
             height: 90%;
@@ -223,21 +231,34 @@
 
     .rutinas__main-section{
         grid-template-columns: 1fr;
-        grid-template-rows: repeat(8, 1fr);
-        padding: 10px 0px 0px 0px;
     }
 
+
     /* EJERCICIOS.HTML */
-    .mainexercises{
+    .ejercicios__main{
         padding: 0px 40px 20px 40px;
+
+        &-section{
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(2, 1fr);
+            padding: 0px;
+        }
     }
 
     .ejercicios-subtitle{
-        padding: 10px 0px 0px 0px;
+        padding: 10px 0px 0px 10px;
         font-size: 20px;
         height: 100%;
         margin: 0px;
         gap: 0px;
+
+        & h2{
+            margin: 0px;
+        }
+
+        & p{
+            margin: 0px;
+        }
     }
 
     .choosezone{
@@ -245,21 +266,6 @@
         grid-template-columns: 1fr;
         grid-template-rows: repeat(2, 1fr);
         padding: 0px;
-    }
-
-    .videos{
-        display: none;
-    }
-
-    .mobile-videos{
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr repeat(3, 3fr) 1fr;
-        align-items: center;
-        justify-items: center;
-        border-radius: 10px;
-        border: $principal-border;
-        color: $principal-color;
     }
 
     /* CONTACTO.HTML */

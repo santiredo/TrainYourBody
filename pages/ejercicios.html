@@ -43,82 +43,347 @@
             <p>Aqui encontraras los mejores ejercicios para que puedas armar tu propia rutina</p>
         </section>
         <section class="ejercicios__main-section">
-            <!-- MI IDEA DE ESTA LISTA ES QUE SEA DESPLEGABLE,
-            POR EJEMPLO: TOCAR EN ZONA MEDIA Y QUE SE DESPLEGUEN
-            LAS OPCIONES DE ABDOMINALES Y LUMBARES (COMO LUMBARES
-            NO TIENE SUBMENUES SE TOCARIA EN ESE ITEM DE LA LISTA
-            Y APARECERIAN VIDEOS PARA ENTRENAR ESA ZONA), Y PARA 
-            ABDOMINALES SE ABRIRIAN OTROS 2 SUBMENUES MAS, LOS 
-            CUALES AL CLICKEARLOS APARECERIAN LOS VIDEOS DEL MUSCULO
-            ELEGIDO, Y ASI CON LAS DEMAS SECCIONES DE LA LISTA. -->
-            <!-- TANTO EN DESKTOP COMO EN TABLET (768PX) LOS VIDEOS APARECERIAN
-            AL COSTADO EN LA SECCION DE VIDEOS, PERO EN LA VERSION MOBILE
-            APARECERIAN DEBAJO EN UNA SECCION DONDE CABERIAN DE A 3 Y SE
-            IRIAN DESPLEGANDO UNO POR UNO A MEDIDA QUE SE CLICKEE EN ALGUNA
-            DE LAS 2 FLECHAS -->
             <div>
-                <ul class="muscles" >
+                <ul class="muscles">
+                    <p>Elija una zona y para cambiar de zona deseleccione la anterior</p>
                     <li class="zones">ZONA MEDIA
                         <ul class="list">
                             <li>ABDOMINALES
                                 <ul class="list">
-                                    <li>RECTO ANTERIOR</li>
-                                    <li>OBLICUOS</li>
+                                    <li class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthRectoAnterior" aria-expanded="false" aria-controls="collapseWidthRectoAnterior">
+                                        RECTO ANTERIOR
+                                    </li>
+                                    <li class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthOblicuos" aria-expanded="false" aria-controls="collapseWidthOblicuos">
+                                        OBLICUOS
+                                    </li>
                                 </ul>
                             </li>
-                            <li>LUMBARES</li>
+                            <li class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthLumbares" aria-expanded="false" aria-controls="collapseWidthLumbares">
+                                LUMBARES
+                            </li>
                         </ul>
                     </li>
                     <li class="zones">TORSO
                         <ul class="list">
                             <li>ESPALDA
                                 <ul class="list">
-                                    <li>DORSALES</li>
-                                    <li>TRAPECIOS</li>
+                                    <li class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthDorsales" aria-expanded="false" aria-controls="collapseWidthDorsales">
+                                        DORSALES
+                                    </li>
+                                    <li class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthTrapecios" aria-expanded="false" aria-controls="collapseWidthTrapecios">
+                                        TRAPECIOS
+                                    </li>
                                 </ul>
                             </li>
-                            <li>PECTORALES</li>
+                            <li class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthPectorales" aria-expanded="false" aria-controls="collapseWidthPectorales">
+                                PECTORALES
+                            </li>
                         </ul>
                     </li>
                     <li class="zones">PIERNAS
                         <ul class="list">
                             <li>GLUTEOS
                                 <ul class="list">
-                                    <li>GLUTEO MAYOR</li>
-                                    <li>GLUTEO MEDIO</li>
+                                    <li class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthGluteoMayor" aria-expanded="false" aria-controls="collapseWidthGluteoMayor">
+                                        GLUTEO MAYOR
+                                    </li>
+                                    <li class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthGluteoMedio" aria-expanded="false" aria-controls="collapseWidthGluteoMedio">
+                                        GLUTEO MEDIO
+                                    </li>
                                 </ul>
                             </li>
-                            <li>CUADRICEPS</li>
-                            <li>ISQUIOS</li>
-                            <li>GEMELOS</li>
+                            <li class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthCuadriceps" aria-expanded="false" aria-controls="collapseWidthCuadriceps">
+                                CUADRICEPS
+                            </li>
+                            <li class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthIsquios" aria-expanded="false" aria-controls="collapseWidthIsquios">
+                                ISQUIOS
+                            </li>
+                            <li class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthGemelos" aria-expanded="false" aria-controls="collapseWidthGemelos">
+                                GEMELOS
+                            </li>
                         </ul>
                     </li>
                     <li class="zones">BRAZOS
                         <ul class="list">
                             <li>HOMBROS
                                 <ul class="list">
-                                    <li>DELTOIDES ANTERIOR</li>
-                                    <li>DELTOIDES LATERAL</li>
-                                    <li>DELTOIDES POSTERIOR</li>
+                                    <li class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthDeltAnt" aria-expanded="false" aria-controls="collapseWidthDeltAnt">
+                                        DELTOIDES ANTERIOR
+                                    </li>
+                                    <li class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthDeltLat" aria-expanded="false" aria-controls="collapseWidthDeltLat">
+                                        DELTOIDES LATERAL
+                                    </li>
+                                    <li class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthDeltPost" aria-expanded="false" aria-controls="collapseWidthDeltPost">
+                                        DELTOIDES POSTERIOR
+                                    </li>
                                 </ul>
                             </li>
-                            <li>BICEPS</li>
-                            <li>TRICEPS</li>
+                            <li class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthBicep" aria-expanded="false" aria-controls="collapseWidthBicep">
+                                BICEPS
+                            </li>
+                            <li class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthTricep" aria-expanded="false" aria-controls="collapseWidthTricep">
+                                TRICEPS
+                            </li>
                         </ul>
                     </li>
                 </ul>
             </div>
-            <div class="videos">
-            </div>
-            <div class="mobile-videos">
-                <div>
-                    <img src="../images/flecha-arriba.png" alt="flecha hacia arriba">
+            <div class="section__videos">
+                <!-- videos de deltoides recto anterior -->
+                <div class="collapse collapse-horizontal" id="collapseWidthRectoAnterior">
+                    <div class="ejercicios-card card-body">
+                        <video class="videos" src="../videos/brazos/delts/vuelo lateral en polea.mp4" autoplay muted loop></video>
+                    </div>
                 </div>
-                <div>EN TOTAL SERIAN 8 VIDEOS QUE VAN APARECIENDO A MEDIDA QUE SE TOCA EN ALGUNA DE LAS 2 FLECHAS</div>
-                <div>APARECEN LOS VIDEOS DE A 3 PERO CUANDO SE TOCA LA FLECHA AVANZAN DE A 1</div>
-                <div></div>
-                <div>
-                    <img src="../images/flecha-abajo.png" alt="flecha hacia abajo">
+                <div class="collapse collapse-horizontal" id="collapseWidthRectoAnterior">
+                    <div class="ejercicios-card card-body">
+                        <video class="videos" src="../videos/brazos/delts/vuelo lateral en polea.mp4" autoplay muted loop></video>
+                    </div>
+                </div>
+                <div class="collapse collapse-horizontal" id="collapseWidthRectoAnterior">
+                    <div class="ejercicios-card card-body">
+                        <video class="videos" src="../videos/brazos/delts/vuelo lateral en polea.mp4" autoplay muted loop></video>
+                    </div>
+                </div>
+                <!-- videos de deltoides oblicuos -->
+                <div class="collapse collapse-horizontal" id="collapseWidthRectoAnterior">
+                    <div class="ejercicios-card card-body">
+                        <video class="videos" src="../videos/brazos/delts/vuelo lateral en polea.mp4" autoplay muted loop></video>
+                    </div>
+                </div>
+                <div class="collapse collapse-horizontal" id="collapseWidthOblicuos">
+                    <div class="ejercicios-card card-body">
+                        <video class="videos" src="../videos/brazos/delts/vuelo lateral en polea.mp4" autoplay muted loop></video>
+                    </div>
+                </div>
+                <div class="collapse collapse-horizontal" id="collapseWidthOblicuos">
+                    <div class="ejercicios-card card-body">
+                        <video class="videos" src="../videos/brazos/delts/vuelo lateral en polea.mp4" autoplay muted loop></video>
+                    </div>
+                </div>
+                <!-- videos de deltoides lumbares -->
+                <div class="collapse collapse-horizontal" id="collapseWidthLumbares">
+                    <div class="ejercicios-card card-body">
+                        <video class="videos" src="../videos/brazos/delts/vuelo lateral en polea.mp4" autoplay muted loop></video>
+                    </div>
+                </div>
+                <div class="collapse collapse-horizontal" id="collapseWidthLumbares">
+                    <div class="ejercicios-card card-body">
+                        <video class="videos" src="../videos/brazos/delts/vuelo lateral en polea.mp4" autoplay muted loop></video>
+                    </div>
+                </div>
+                <div class="collapse collapse-horizontal" id="collapseWidthLumbares">
+                    <div class="ejercicios-card card-body">
+                        <video class="videos" src="../videos/brazos/delts/vuelo lateral en polea.mp4" autoplay muted loop></video>
+                    </div>
+                </div>
+                <!-- videos de deltoides dorsales -->
+                <div class="collapse collapse-horizontal" id="collapseWidthDorsales">
+                    <div class="ejercicios-card card-body">
+                        <video class="videos" src="../videos/brazos/delts/vuelo lateral en polea.mp4" autoplay muted loop></video>
+                    </div>
+                </div>
+                <div class="collapse collapse-horizontal" id="collapseWidthDorsales">
+                    <div class="ejercicios-card card-body">
+                        <video class="videos" src="../videos/brazos/delts/vuelo lateral en polea.mp4" autoplay muted loop></video>
+                    </div>
+                </div>
+                <div class="collapse collapse-horizontal" id="collapseWidthDorsales">
+                    <div class="ejercicios-card card-body">
+                        <video class="videos" src="../videos/brazos/delts/vuelo lateral en polea.mp4" autoplay muted loop></video>
+                    </div>
+                </div>
+                <!-- videos de deltoides trapecios -->
+                <div class="collapse collapse-horizontal" id="collapseWidthTrapecios">
+                    <div class="ejercicios-card card-body">
+                        <video class="videos" src="../videos/brazos/delts/vuelo lateral en polea.mp4" autoplay muted loop></video>
+                    </div>
+                </div>
+                <div class="collapse collapse-horizontal" id="collapseWidthTrapecios">
+                    <div class="ejercicios-card card-body">
+                        <video class="videos" src="../videos/brazos/delts/vuelo lateral en polea.mp4" autoplay muted loop></video>
+                    </div>
+                </div>
+                <div class="collapse collapse-horizontal" id="collapseWidthTrapecios">
+                    <div class="ejercicios-card card-body">
+                        <video class="videos" src="../videos/brazos/delts/vuelo lateral en polea.mp4" autoplay muted loop></video>
+                    </div>
+                </div>
+                <!-- videos de deltoides pectorales -->
+                <div class="collapse collapse-horizontal" id="collapseWidthPectorales">
+                    <div class="ejercicios-card card-body">
+                        <video class="videos" src="../videos/brazos/delts/vuelo lateral en polea.mp4" autoplay muted loop></video>
+                    </div>
+                </div>
+                <div class="collapse collapse-horizontal" id="collapseWidthPectorales">
+                    <div class="ejercicios-card card-body">
+                        <video class="videos" src="../videos/brazos/delts/vuelo lateral en polea.mp4" autoplay muted loop></video>
+                    </div>
+                </div>
+                <div class="collapse collapse-horizontal" id="collapseWidthPectorales">
+                    <div class="ejercicios-card card-body">
+                        <video class="videos" src="../videos/brazos/delts/vuelo lateral en polea.mp4" autoplay muted loop></video>
+                    </div>
+                </div>
+                <!-- videos de deltoides gluteo mayor -->
+                <div class="collapse collapse-horizontal" id="collapseWidthGluteoMayor">
+                    <div class="ejercicios-card card-body">
+                        <video class="videos" src="../videos/brazos/delts/vuelo lateral en polea.mp4" autoplay muted loop></video>
+                    </div>
+                </div>
+                <div class="collapse collapse-horizontal" id="collapseWidthGluteoMayor">
+                    <div class="ejercicios-card card-body">
+                        <video class="videos" src="../videos/brazos/delts/vuelo lateral en polea.mp4" autoplay muted loop></video>
+                    </div>
+                </div>
+                <div class="collapse collapse-horizontal" id="collapseWidthGluteoMayor">
+                    <div class="ejercicios-card card-body">
+                        <video class="videos" src="../videos/brazos/delts/vuelo lateral en polea.mp4" autoplay muted loop></video>
+                    </div>
+                </div>
+                <!-- videos de deltoides gluteo medio -->
+                <div class="collapse collapse-horizontal" id="collapseWidthGluteoMedio">
+                    <div class="ejercicios-card card-body">
+                        <video class="videos" src="../videos/brazos/delts/vuelo lateral en polea.mp4" autoplay muted loop></video>
+                    </div>
+                </div>
+                <div class="collapse collapse-horizontal" id="collapseWidthGluteoMedio">
+                    <div class="ejercicios-card card-body">
+                        <video class="videos" src="../videos/brazos/delts/vuelo lateral en polea.mp4" autoplay muted loop></video>
+                    </div>
+                </div>
+                <div class="collapse collapse-horizontal" id="collapseWidthGluteoMedio">
+                    <div class="ejercicios-card card-body">
+                        <video class="videos" src="../videos/brazos/delts/vuelo lateral en polea.mp4" autoplay muted loop></video>
+                    </div>
+                </div>
+                <!-- videos de deltoides cuadricep -->
+                <div class="collapse collapse-horizontal" id="collapseWidthCuadriceps">
+                    <div class="ejercicios-card card-body">
+                        <video class="videos" src="../videos/brazos/delts/vuelo lateral en polea.mp4" autoplay muted loop></video>
+                    </div>
+                </div>
+                <div class="collapse collapse-horizontal" id="collapseWidthCuadriceps">
+                    <div class="ejercicios-card card-body">
+                        <video class="videos" src="../videos/brazos/delts/vuelo lateral en polea.mp4" autoplay muted loop></video>
+                    </div>
+                </div>
+                <div class="collapse collapse-horizontal" id="collapseWidthCuadriceps">
+                    <div class="ejercicios-card card-body">
+                        <video class="videos" src="../videos/brazos/delts/vuelo lateral en polea.mp4" autoplay muted loop></video>
+                    </div>
+                </div>
+                <!-- videos de deltoides isquios -->
+                <div class="collapse collapse-horizontal" id="collapseWidthIsquios">
+                    <div class="ejercicios-card card-body">
+                        <video class="videos" src="../videos/brazos/delts/vuelo lateral en polea.mp4" autoplay muted loop></video>
+                    </div>
+                </div>
+                <div class="collapse collapse-horizontal" id="collapseWidthIsquios">
+                    <div class="ejercicios-card card-body">
+                        <video class="videos" src="../videos/brazos/delts/vuelo lateral en polea.mp4" autoplay muted loop></video>
+                    </div>
+                </div>
+                <div class="collapse collapse-horizontal" id="collapseWidthIsquios">
+                    <div class="ejercicios-card card-body">
+                        <video class="videos" src="../videos/brazos/delts/vuelo lateral en polea.mp4" autoplay muted loop></video>
+                    </div>
+                </div>
+                <!-- videos de deltoides gemelos -->
+                <div class="collapse collapse-horizontal" id="collapseWidthGemelos">
+                    <div class="ejercicios-card card-body">
+                        <video class="videos" src="../videos/brazos/delts/vuelo lateral en polea.mp4" autoplay muted loop></video>
+                    </div>
+                </div>
+                <div class="collapse collapse-horizontal" id="collapseWidthGemelos">
+                    <div class="ejercicios-card card-body">
+                        <video class="videos" src="../videos/brazos/delts/vuelo lateral en polea.mp4" autoplay muted loop></video>
+                    </div>
+                </div>
+                <div class="collapse collapse-horizontal" id="collapseWidthGemelos">
+                    <div class="ejercicios-card card-body">
+                        <video class="videos" src="../videos/brazos/delts/vuelo lateral en polea.mp4" autoplay muted loop></video>
+                    </div>
+                </div>
+                <!-- videos de deltoides anterior -->
+                <div class="collapse collapse-horizontal" id="collapseWidthDeltAnt">
+                    <div class="ejercicios-card card-body">
+                        <video class="videos" src="../videos/brazos/delts/vuelo lateral en polea.mp4" autoplay muted loop></video>
+                    </div>
+                </div>
+                <div class="collapse collapse-horizontal" id="collapseWidthDeltAnt">
+                    <div class="ejercicios-card card-body">
+                        <video class="videos" src="../videos/brazos/delts/vuelo lateral en polea.mp4" autoplay muted loop></video>
+                    </div>
+                </div>
+                <div class="collapse collapse-horizontal" id="collapseWidthDeltAnt">
+                    <div class="ejercicios-card card-body">
+                        <video class="videos" src="../videos/brazos/delts/vuelo lateral en polea.mp4" autoplay muted loop></video>
+                    </div>
+                </div>
+                <!-- videos de deltoides laterales -->
+                <div class="collapse collapse-horizontal" id="collapseWidthDeltLat">
+                    <div class="ejercicios-card card-body">
+                        <video class="videos" src="../videos/brazos/delts/vuelo lateral en polea.mp4" autoplay muted loop></video>
+                    </div>
+                </div>
+                <div class="collapse collapse-horizontal" id="collapseWidthDeltLat">
+                    <div class="ejercicios-card card-body">
+                        <video class="videos" src="../videos/brazos/delts/vuelo lateral en polea.mp4" autoplay muted loop></video>
+                    </div>
+                </div>
+                <div class="collapse collapse-horizontal" id="collapseWidthDeltLat">
+                    <div class="ejercicios-card card-body">
+                        <video class="videos" src="../videos/brazos/delts/vuelo lateral en polea.mp4" autoplay muted loop></video>
+                    </div>
+                </div>
+                <!-- videos de deltoides posterior -->
+                <div class="collapse collapse-horizontal" id="collapseWidthDeltPost">
+                    <div class="ejercicios-card card-body">
+                        <video class="videos" src="../videos/brazos/delts/vuelo lateral en polea.mp4" autoplay muted loop></video>
+                    </div>
+                </div>
+                <div class="collapse collapse-horizontal" id="collapseWidthDeltPost">
+                    <div class="ejercicios-card card-body">
+                        <video class="videos" src="../videos/brazos/delts/vuelo lateral en polea.mp4" autoplay muted loop></video>
+                    </div>
+                </div>
+                <div class="collapse collapse-horizontal" id="collapseWidthDeltPost">
+                    <div class="ejercicios-card card-body">
+                        <video class="videos" src="../videos/brazos/delts/vuelo lateral en polea.mp4" autoplay muted loop></video>
+                    </div>
+                </div>
+                <!-- videos de bicep -->
+                <div class="collapse collapse-horizontal" id="collapseWidthBicep">
+                    <div class="ejercicios-card card-body">
+                        <video class="videos" src="../videos/brazos/bicep/bicep colgado con barra.mp4" autoplay muted loop></video>
+                    </div>
+                </div>
+                <div class="collapse collapse-horizontal" id="collapseWidthBicep">
+                    <div class="ejercicios-card card-body">
+                        <video class="videos" src="../videos/brazos/bicep/bicep colgado con barra.mp4" autoplay muted loop></video>
+                    </div>
+                </div>
+                <div class="collapse collapse-horizontal" id="collapseWidthBicep">
+                    <div class="ejercicios-card card-body">
+                        <video class="videos" src="../videos/brazos/bicep/bicep colgado con barra.mp4" autoplay muted loop></video>
+                    </div>
+                </div>
+                <!-- videos de tricep -->
+                <div class="collapse collapse-horizontal" id="collapseWidthTricep">
+                    <div class="ejercicios-card card-body">
+                        <video class="videos" src="../videos/brazos/bicep/bicep colgado con barra.mp4" autoplay muted loop></video>
+                    </div>
+                </div>
+                <div class="collapse collapse-horizontal" id="collapseWidthTricep">
+                    <div class="ejercicios-card card-body">
+                        <video class="videos" src="../videos/brazos/bicep/bicep colgado con barra.mp4" autoplay muted loop></video>
+                    </div>
+                </div>
+                <div class="collapse collapse-horizontal" id="collapseWidthTricep">
+                    <div class="ejercicios-card card-body">
+                        <video class="videos" src="../videos/brazos/bicep/bicep colgado con barra.mp4" autoplay muted loop></video>
+                    </div>
                 </div>
             </div>
         </section>
