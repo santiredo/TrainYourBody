@@ -58,7 +58,14 @@
 }
 
 .btn{
-    border: none;
+    border: $principal-border;
+    @include background;
+    transition: 0.5s;
+
+    &:hover{
+        border: solid #4DAEFE;
+        color: #4DAEFE;
+    }
 }
 
 .mobile-videos{
