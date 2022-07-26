@@ -673,6 +673,8 @@
     .ejercicios-index article {
       height: 90%;
       width: 90%; }
+      .ejercicios-index article a h3 {
+        font-size: small; }
   /* RUTINAS.HTML */
   .rutinas__main {
     grid-template-rows: 1fr 15fr; }

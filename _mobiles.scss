@@ -213,6 +213,10 @@
         & article{
             height: 90%;
             width: 90%;
+
+            & a h3{
+                font-size: small;
+            }
         }
     }
 
