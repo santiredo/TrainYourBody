@@ -345,8 +345,8 @@
 .videos {
   border-radius: 15px;
   border: solid salmon;
-  width: 400px;
-  height: 400px; }
+  width: 100%;
+  height: 100%; }
 
 .btn {
   border: solid salmon;
@@ -545,7 +545,17 @@
         .footer__sn-link:hover .link-twitter {
           color: #00acee; }
 
-@media screen and (max-width: 768px) {
+@media (max-width: 1100px) {
+  .ejercicios-index {
+    justify-content: space-evenly; }
+    .ejercicios-index article {
+      width: 200px; }
+      .ejercicios-index article a video {
+        width: 170px;
+        height: 170px;
+        border-radius: 15px; } }
+
+@media (max-width: 800px) {
   /* HEADER GENERICO */
   .header {
     grid-template-columns: 4fr 1fr;
@@ -596,15 +606,12 @@
     border-bottom: none; }
   .ejercicios-index {
     display: grid;
-    padding: 0 100px;
+    padding: 0 0;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr); }
     .ejercicios-index article {
       width: 250px;
       height: 250px; }
-      .ejercicios-index article a video {
-        width: 150px;
-        height: 150px; }
   /* RUTINAS.HTML */
   .rutinas__main {
     grid-template-rows: 1fr 15fr;
@@ -634,9 +641,11 @@
   .footer {
     width: 100%;
     padding-left: 0px;
-    padding-right: 0px; } }
+    padding-right: 0px; }
+    .footer__sn {
+      padding-left: 0; } }
 
-@media screen and (max-width: 425px) {
+@media (max-width: 525px) {
   /* HEADER GENERICO */
   .header__title a h1 {
     display: none; }
@@ -680,6 +689,9 @@
       width: 90%; }
       .ejercicios-index article a h3 {
         font-size: small; }
+      .ejercicios-index article a video {
+        width: 130px;
+        height: 130px; }
   /* RUTINAS.HTML */
   .rutinas__main {
     grid-template-rows: 1fr 15fr; }
@@ -748,8 +760,7 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-  font-family: 'Spline Sans Mono', monospace; }
+  box-sizing: border-box; }
 
 .subtitle {
   display: grid;

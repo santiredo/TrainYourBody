@@ -1,4 +1,25 @@
-@media (min-width: 768px){
+@media (max-width: 1100px){
+
+    // INDEX.HTML
+
+    .ejercicios-index{
+
+        justify-content: space-evenly;
+
+        & article{
+            width: 200px;
+
+            & a video{
+                width: 170px;
+                height: 170px;
+                border-radius: 15px;
+            }
+        }
+    }
+    
+}
+
+@media (max-width: 800px){
 
     /* HEADER GENERICO */
     .header{
@@ -76,18 +97,13 @@
 
     .ejercicios-index{
         display: grid;
-        padding: 0 100px;
+        padding: 0 0;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(2, 1fr);
 
         & article{
             width: 250px;
             height: 250px;
-
-            & a video{
-                width: 150px;
-                height: 150px;
-            }
         }
     }
 
@@ -137,10 +153,14 @@
         width: 100%;
         padding-left: 0px;
         padding-right: 0px;
+
+        &__sn{
+            padding-left: 0;
+        }
     }
 }
 
-@media screen and (max-width: 425px){
+@media (max-width: 525px){
 
     /* HEADER GENERICO */
     .header__title a{
@@ -217,6 +237,11 @@
             & a h3{
                 font-size: small;
             }
+
+            & a video{
+                width: 130px;
+                height: 130px;
+            }
         }
     }
 
@@ -271,6 +296,7 @@
         grid-template-rows: repeat(2, 1fr);
         padding: 0px;
     }
+
 
     /* CONTACTO.HTML */
     .maincontact{
