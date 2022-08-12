@@ -11,10 +11,9 @@
     &-subtitle{
         display: grid;
         color: $principal-color;
-        height: 100px;
+        height: auto;
         align-items: center;
-        margin-left: 50px;
-        margin-top: 10px;
+        margin: 10px 10px 10px 50px;
     }
 
     &__form{
@@ -45,6 +44,11 @@
             align-items: center;
             justify-items: center;
         }
+
+        &-mobile{
+            display: none;
+        }
+
     }
 }
 

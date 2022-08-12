@@ -10,6 +10,7 @@
     padding-top: 15px;
     padding-bottom: 15px;
     border-bottom: $principal-border;
+    align-items: center;
 
     &__title a{
         text-decoration: none;
@@ -37,6 +38,14 @@
     background: linear-gradient(black,#181818);
     border-radius: 40px;
     padding: 0;
+    justify-content: center;
+
+    &__container{
+        display: flex;
+        flex-wrap: inherit;
+        align-content: center;
+        justify-content: center;
+    }
 
     &-collapse{
         justify-content: space-evenly;
@@ -57,4 +66,5 @@
         }
     }
 }
+
 

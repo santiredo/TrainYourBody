@@ -367,10 +367,9 @@
   .contacto-subtitle {
     display: grid;
     color: white;
-    height: 100px;
+    height: auto;
     align-items: center;
-    margin-left: 50px;
-    margin-top: 10px; }
+    margin: 10px 10px 10px 50px; }
   .contacto__form {
     display: grid;
     grid-template-columns: 1fr;
@@ -393,6 +392,8 @@
       grid-template-rows: repeat(6, 1fr);
       align-items: center;
       justify-items: center; }
+    .contacto__form-mobile {
+      display: none; }
 
 .textarea, .formdivs, .submit-clean__button button {
   width: 410px;
@@ -458,7 +459,8 @@
   padding: 40px;
   padding-top: 15px;
   padding-bottom: 15px;
-  border-bottom: solid salmon; }
+  border-bottom: solid salmon;
+  align-items: center; }
   .header__title a {
     text-decoration: none;
     color: white;
@@ -476,7 +478,13 @@
 .navbar {
   background: linear-gradient(black, #181818);
   border-radius: 40px;
-  padding: 0; }
+  padding: 0;
+  justify-content: center; }
+  .navbar__container {
+    display: flex;
+    flex-wrap: inherit;
+    align-content: center;
+    justify-content: center; }
   .navbar-collapse {
     justify-content: space-evenly; }
   .navbar a {
@@ -555,6 +563,14 @@
         height: 170px;
         border-radius: 15px; } }
 
+@media (max-width: 910px) {
+  .formdivs, .submit-clean__button button {
+    width: 80%; }
+  .textarea, .formdivs, .submit-clean__button button {
+    width: 80%; }
+  .checkboxes {
+    width: 80%; } }
+
 @media (max-width: 800px) {
   /* HEADER GENERICO */
   .header {
@@ -624,16 +640,6 @@
     width: 120%;
     height: 140%; }
   /* CONTACTO.HTML */
-  .maincontact {
-    grid-template-rows: 1fr 7fr; }
-  .contactform {
-    grid-template-columns: 1fr;
-    grid-template-rows: 6fr 1fr;
-    padding: 0px;
-    gap: none; }
-  .formulario {
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(2, 1fr); }
   .submit-clean {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(2, 1fr); }
@@ -726,26 +732,13 @@
     grid-template-rows: repeat(2, 1fr);
     padding: 0px; }
   /* CONTACTO.HTML */
-  .maincontact {
-    grid-template-rows: 1fr 4fr;
-    padding: 0px 40px 20px 40px; }
-  .contacto-subtitle {
-    padding: 10px 0px 0px 0px;
-    font-size: 20px;
-    height: 250px;
-    margin: 0px;
-    gap: 0px; }
-  .contactform {
-    margin: 0px;
-    padding: 0px; }
-  .formdivs, .submit-clean__button button {
-    width: 90%; }
-  .textarea, .formdivs, .submit-clean__button button {
-    width: 90%; }
-  .checkboxes {
-    width: 90%; }
-  .clean-send {
-    width: 90%; }
+  .contacto__form-datos {
+    display: none; }
+  .contacto__form-mobile {
+    display: grid;
+    grid-template-rows: repeat(6, 1fr) 4fr 1fr 1fr;
+    align-items: center;
+    justify-items: center; }
   /* FOOTER GENERICO */
   .footer {
     padding-right: 30px;

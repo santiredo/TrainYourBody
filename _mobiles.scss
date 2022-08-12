@@ -19,6 +19,24 @@
     
 }
 
+@media (max-width: 910px){
+    
+    // CONTACTOS.HTML
+
+    .formdivs{
+        width: 80%;
+    }
+
+    .textarea{
+        width: 80%;
+    }
+
+    .checkboxes{
+        width: 80%;
+    }
+
+}
+
 @media (max-width: 800px){
 
     /* HEADER GENERICO */
@@ -126,22 +144,6 @@
     }
 
     /* CONTACTO.HTML */
-
-    .maincontact{
-        grid-template-rows: 1fr 7fr;
-    }
-
-    .contactform{
-        grid-template-columns: 1fr;
-        grid-template-rows: 6fr 1fr;
-        padding: 0px;
-        gap: none;
-    }
-
-    .formulario{
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(2, 1fr);
-    }
 
     .submit-clean{
         grid-template-columns: 1fr;
@@ -299,40 +301,18 @@
 
 
     /* CONTACTO.HTML */
-    .maincontact{
-        grid-template-rows: 1fr 4fr;
-        padding: 0px 40px 20px 40px;
+
+    .contacto__form-datos{
+        display: none;
     }
 
-    .contacto-subtitle{
-        padding: 10px 0px 0px 0px;
-        font-size: 20px;
-        height: 250px;
-        margin: 0px;
-        gap: 0px;
+    .contacto__form-mobile{
+        display: grid;
+        grid-template-rows: repeat(6, 1fr) 4fr 1fr 1fr;
+        align-items: center;
+        justify-items: center;
     }
-
-    .contactform {
-        margin: 0px;
-        padding: 0px;
-    }
-
-    .formdivs{
-        width: 90%;
-    }
-
-    .textarea{
-        width: 90%;
-    }
-
-    .checkboxes{
-        width: 90%;
-    }
-
-    .clean-send{
-        width: 90%;
-    }
-
+    
     /* FOOTER GENERICO */
     .footer{
         padding-right: 30px;

@@ -27,7 +27,7 @@
             </a>
         </div>        
         <nav class="navbar navbar-expand-lg bg-light">
-            <div class="container-fluid">
+            <div class="navbar__container">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                     <img src="../images/nav_bar.png" alt="menu desplegable de las paginas del sitio">
                 </button>
@@ -45,6 +45,33 @@
             <p>Si tienes alguna duda acerca de nosotros, tuviste problemas con la plataforma o queres saber mas acerca de como mejorar tu rendimiento, no dudes en contactarnos</p>
         </section>
         <form class="contacto__form">
+            <div class="contacto__form-mobile">
+                <input type="text" placeholder="NOMBRE...*" class="formdivs">
+                <input type="text" placeholder="APELLIDO...*" class="formdivs">
+                <input type="text" placeholder="TELEFONO...*" class="formdivs">
+                <input type="email" placeholder="EMAIL...*" class="formdivs">
+                <select class="formdivs" aria-placeholder="hola">
+                    <option id="sports" value="none" class="sport-options">INGRESE SU DEPORTE</option>
+                    <option value="futbol" class="sport-options">FUTBOL</option>
+                    <option value="handbol" class="sport-options">RUGBY</option>
+                    <option value="basquetbol" class="sport-options">HANDBALL</option>
+                    <option value="natacion" class="sport-options">HOCKEY</option>
+                    <option value="voleybol" class="sport-options">BASKETBALL</option>
+                    <option value="rugby" class="sport-options">NATACION</option>
+                    <option value="otro" class="sport-options">FUERZA</option>
+                    <option value="otro" class="sport-options">HIPERTROFIA</option>
+                </select>
+                <input type="text" placeholder="OTRO DEPORTE?" class="formdivs">
+                <textarea cols="30" rows="10" placeholder="TIENE ALGUNA CONSULTA?*" class="textarea"></textarea>
+                <div class="checkboxes">
+                    <input type="checkbox" id="email">
+                    <label for="email">DESEA RECIBIR MAILS DE NUESTRO SITIO?</label>
+                </div>
+                <div class="checkboxes">
+                    <input type="checkbox" id="terms">
+                    <label for="terms">ACEPTA NUESTROS TERMINOS Y CONDICIONES?</label>
+                </div>
+            </div>
             <div class="contacto__form-datos">
                 <div class="contacto__form-1">
                     <input type="text" placeholder="NOMBRE...*" class="formdivs">
