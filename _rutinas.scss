@@ -18,12 +18,7 @@
         }
 
         &-subtitle{
-            display: grid;
-            color: white;
-            height: 100px;
-            align-items: center;
-            margin-left: 50px;
-            margin-top: 10px;
+            @extend .subtitle;
         }
     }
 }
@@ -44,12 +39,12 @@
 
         @keyframes sports-hover {
             0% {
-                box-shadow: 0 0 0 0 white;
+                box-shadow: 0 0 0 0 $principal-color;
                 transform: scale(1) translateX(0) translateY(0);
             }
         
             100% {
-                box-shadow: 12px 12px 20px -12px white;
+                box-shadow: 12px 12px 20px -12px $principal-color;
                 transform: scale(1.1) translateX(-10px) translateY(-10px);
             }
         }

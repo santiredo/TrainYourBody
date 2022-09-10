@@ -16,12 +16,7 @@
     }
 
     &-subtitle{
-        display: grid;
-        color: $principal-color;
-        height: 100px;
-        align-items: center;
-        margin-left: 50px;
-        margin-top: 10px;
+        @extend .subtitle;
     }
 }
 
