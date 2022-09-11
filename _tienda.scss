@@ -1,1 +1,74 @@
+.tienda{
+    @extend .index;
 
+    &__main{
+        @include background;
+        display: grid;
+        grid-area: main;
+        grid-template-rows: 1fr 6fr;
+
+        &-section{
+            display: grid;
+            grid-template-rows: repeat(3, 1fr);
+            align-items: center;
+            justify-items: center;
+            gap: 40px;
+            padding: 20px 40px 40px 40px;
+
+            &-article{
+                display: grid;
+                align-items: center;
+                justify-items: center;
+                border: $principal-border;
+                border-radius: 15px;
+
+                &:hover{
+                    &:hover{
+                        animation: articulos-hover .3s linear 0s 1 normal forwards;
+                
+                        @keyframes articulos-hover {
+                            0% {
+                                box-shadow: 0 0 0 0 $principal-color;
+                                transform: scale(1) translateX(0) translateY(0);
+                            }
+                        
+                            100% {
+                                box-shadow: 12px 12px 20px -12px $principal-color;
+                                transform: scale(1) translateX(-5px) translateY(-5px);
+                            }
+                        }
+                    }
+                }
+
+                & h3{
+                    margin: 0;
+                    color: $principal-color;
+
+                }
+            }
+
+            &-ropa{
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                width: 100%;
+                column-gap: 5%;
+            }
+            &-accesorios{
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                width: 100%;
+                column-gap: 5%;
+            }
+            &-maquinaria{
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                width: 100%;
+                column-gap: 5%;
+            }
+        }
+
+        &-subtitle{
+            @extend .subtitle;
+        }
+    }
+}

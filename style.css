@@ -1,4 +1,4 @@
-.index, .rutinas, .ejercicios, .contbody {
+.index, .rutinas, .ejercicios, .contbody, .tienda {
   display: grid;
   grid-template-areas: "header" "main" "footer";
   font-family: "Spline Sans Mono", monospace; }
@@ -253,13 +253,6 @@
     justify-items: center;
     gap: 40px;
     padding: 20px 40px 40px 40px; }
-  .rutinas__main-subtitle {
-    display: grid;
-    color: white;
-    height: 100px;
-    align-items: center;
-    margin-left: 50px;
-    margin-top: 10px; }
 
 .sports {
   display: grid;
@@ -314,14 +307,6 @@
     grid-template-columns: 5fr 9fr;
     gap: 20px;
     padding: 20px 40px 40px 40px; }
-
-.ejercicios-subtitle {
-  display: grid;
-  color: white;
-  height: 100px;
-  align-items: center;
-  margin-left: 50px;
-  margin-top: 10px; }
 
 .muscles {
   text-align: left;
@@ -447,6 +432,53 @@
   100% {
     box-shadow: 0px 5px 20px 0px #757575;
     transform: scale(1.1) translateY(-3px); } }
+
+.tienda__main {
+  background: linear-gradient(#181818, #242323, #181818);
+  display: grid;
+  grid-area: main;
+  grid-template-rows: 1fr 6fr; }
+  .tienda__main-section {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    align-items: center;
+    justify-items: center;
+    gap: 40px;
+    padding: 20px 40px 40px 40px; }
+    .tienda__main-section-article {
+      display: grid;
+      align-items: center;
+      justify-items: center;
+      border: solid salmon;
+      border-radius: 15px; }
+      .tienda__main-section-article:hover:hover {
+        animation: articulos-hover .3s linear 0s 1 normal forwards; }
+
+@keyframes articulos-hover {
+  0% {
+    box-shadow: 0 0 0 0 white;
+    transform: scale(1) translateX(0) translateY(0); }
+  100% {
+    box-shadow: 12px 12px 20px -12px white;
+    transform: scale(1) translateX(-5px) translateY(-5px); } }
+      .tienda__main-section-article h3 {
+        margin: 0;
+        color: white; }
+    .tienda__main-section-ropa {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      width: 100%;
+      column-gap: 5%; }
+    .tienda__main-section-accesorios {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      width: 100%;
+      column-gap: 5%; }
+    .tienda__main-section-maquinaria {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      width: 100%;
+      column-gap: 5%; }
 
 .header {
   display: grid;
@@ -579,7 +611,7 @@
   .header__title a {
     display: grid;
     align-items: center; }
-  .subtitle {
+  .subtitle, .rutinas__main-subtitle, .ejercicios-subtitle, .tienda__main-subtitle {
     padding-bottom: 0px;
     margin-left: 40px;
     margin-top: 0px;
@@ -755,7 +787,7 @@
   padding: 0;
   box-sizing: border-box; }
 
-.subtitle {
+.subtitle, .rutinas__main-subtitle, .ejercicios-subtitle, .tienda__main-subtitle {
   display: grid;
   color: white;
   height: 100px;
