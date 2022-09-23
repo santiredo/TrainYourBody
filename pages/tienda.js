@@ -4,28 +4,6 @@ function presentation(userName) {
 
 alert(presentation(prompt('Ingrese su nombre de usuario')));
 
-class Product {
-    constructor(id, name, price){
-        this.id = id;
-        this.name = name;
-        this.price = Number(price);
-    }
-}
-
-const products = [];
-
-const product1 = new Product(1, 'REMERAS', 1000);
-const product2 = new Product(2, 'BUZOS', 2500);
-const product3 = new Product(3, 'SHORTS', 1500);
-const product4 = new Product(4, 'GORRAS', 850);
-const product5 = new Product(5, 'CINTURONES', 1800);
-const product6 = new Product(6, 'MEDIAS', 600);
-const product7 = new Product(7, 'BARRAS', 5000);
-const product8 = new Product(8, 'PESAS', 3000);
-const product9 = new Product(9, 'MANCUERNAS', 2500);
-
-products.push(product1, product2, product3, product4, product5, product6, product7, product8, product9);
-
 const productsInOrder = () => {
     let filterForProducts = prompt('Indique el numero de la opcion que desee para filtrar los productos:\n 1_ Precio\n 2_ Mas vendidos\n 3_ Mas nuevo');
 
