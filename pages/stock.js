@@ -1,11 +1,12 @@
-const products = [
+
+const clothes = [
     {
         id: 1,
         name: "REMERAS",
         price: 1000,
         size: "Oversize M",
         description: "Remeras oversize con diseños super originales",
-        img: "../tienda/remera_blanca.jpg",
+        img: "../tienda/remera_gris.png",
         quantity:1
     },
     {
@@ -14,7 +15,7 @@ const products = [
         price: 2500,
         size: "Oversize M",
         description: "Buzos oversize, los mas comodos y estilosos",
-        img: "../tienda/remera_blanca.jpg",
+        img: "../tienda/buzo_azul.png",
         quantity:1
     },
     {
@@ -23,9 +24,14 @@ const products = [
         price: 1500,
         size: "M",
         description: "Shorts ideales para tus entrenamientos",
-        img: "../tienda/remera_blanca.jpg",
+        img: "../tienda/short_negro.png",
         quantity:1
     },
+    
+    
+]
+
+const accessories = [
     {
         id: 4,
         name: "GORRAS",
@@ -53,6 +59,9 @@ const products = [
         img: "../tienda/remera_blanca.jpg",
         quantity:1
     },
+]
+
+const elements = [
     {
         id: 7,
         name: "BARRAS",
@@ -66,9 +75,7 @@ const products = [
         id: 8,
         name: "PESAS",
         price: 3000,
-        size: '20kg',
-        size2: '10kg',
-        size3: '5kg',
+        size: '10kg',
         description: "Pesas olimpicas para llevar con la barra",
         img: "../tienda/remera_blanca.jpg",
         quantity:1
@@ -77,12 +84,12 @@ const products = [
         id: 9,
         name: "MANCUERNAS",
         price: 2500,
-        size: '5kg',
-        size2: '10kg',
-        size3: '15kg',
-        size4: '20kg',
+        size: '15kg ',
         description: "Mancuernas para completar tu set de barras y pesas",
         img: "../tienda/remera_blanca.jpg",
         quantity:1
     },
-]
+];
+
+
+const products = clothes.concat(accessories, elements);
