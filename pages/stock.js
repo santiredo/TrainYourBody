@@ -38,7 +38,7 @@ const accessories = [
         price: 850,
         size: "Unico talle",
         description: "Las mejores gorras clasicas para vos",
-        img: "../tienda/remera_blanca.jpg",
+        img: "../tienda/gorra_negra.png",
         quantity:1
     },
     {

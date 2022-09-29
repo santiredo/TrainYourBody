@@ -47,11 +47,11 @@
         </section>
         <form class="contacto__form">
             <div class="contacto__form-mobile">
-                <input type="text" placeholder="NOMBRE...*" class="formdivs">
-                <input type="text" placeholder="APELLIDO...*" class="formdivs">
-                <input type="text" placeholder="TELEFONO...*" class="formdivs">
-                <input type="email" placeholder="EMAIL...*" class="formdivs">
-                <select class="formdivs" aria-placeholder="hola">
+                <input type="text" id="mobile_userName" placeholder="NOMBRE...*" class="formdivs">
+                <input type="text" id="mobile_surname" placeholder="APELLIDO...*" class="formdivs">
+                <input type="text" id="mobile_phoneNumber" placeholder="TELEFONO...*" class="formdivs">
+                <input type="email" id="mobile_mail" placeholder="EMAIL...*" class="formdivs">
+                <select class="formdivs" id="mobile_sportSelection" aria-placeholder="hola">
                     <option id="sports" value="none" class="sport-options">INGRESE SU DEPORTE</option>
                     <option value="futbol" class="sport-options">FUTBOL</option>
                     <option value="handbol" class="sport-options">RUGBY</option>
@@ -62,10 +62,10 @@
                     <option value="otro" class="sport-options">FUERZA</option>
                     <option value="otro" class="sport-options">HIPERTROFIA</option>
                 </select>
-                <input type="text" placeholder="OTRO DEPORTE?" class="formdivs">
-                <textarea cols="30" rows="10" placeholder="TIENE ALGUNA CONSULTA?*" class="textarea"></textarea>
+                <input type="text" id="mobile_otherSport" placeholder="OTRO DEPORTE?" class="formdivs">
+                <textarea cols="30" rows="10" id="mobile_doubts" placeholder="TIENE ALGUNA CONSULTA?*" class="textarea"></textarea>
                 <div class="checkboxes">
-                    <input type="checkbox" id="email">
+                    <input type="checkbox" id="mobile_email">
                     <label for="email">DESEA RECIBIR MAILS DE NUESTRO SITIO?</label>
                 </div>
                 <div class="checkboxes">
@@ -75,14 +75,14 @@
             </div>
             <div class="contacto__form-datos">
                 <div class="contacto__form-1">
-                    <input type="text" placeholder="NOMBRE...*" class="formdivs">
-                    <input type="text" placeholder="TELEFONO...*" class="formdivs">
-                    <textarea cols="30" rows="10" placeholder="TIENE ALGUNA CONSULTA?*" class="textarea"></textarea>
+                    <input type="text" id="userName" placeholder="NOMBRE...*" class="formdivs">
+                    <input type="text" id="phoneNumber" placeholder="TELEFONO...*" class="formdivs">
+                    <textarea cols="30" rows="10" id="doubts" placeholder="TIENE ALGUNA CONSULTA?*" class="textarea"></textarea>
                 </div>
                 <div class="contacto__form-2">
-                        <input type="text" placeholder="APELLIDO...*" class="formdivs">
-                        <input type="email" placeholder="EMAIL...*" class="formdivs">
-                        <select class="formdivs" aria-placeholder="hola">
+                        <input type="text" id="surname" placeholder="APELLIDO...*" class="formdivs">
+                        <input type="email" id="email" placeholder="EMAIL...*" class="formdivs">
+                        <select class="formdivs" id="sportSelection" aria-placeholder="hola">
                             <option id="sports" value="none" class="sport-options">INGRESE SU DEPORTE</option>
                             <option value="futbol" class="sport-options">FUTBOL</option>
                             <option value="handbol" class="sport-options">RUGBY</option>
@@ -93,9 +93,9 @@
                             <option value="otro" class="sport-options">FUERZA</option>
                             <option value="otro" class="sport-options">HIPERTROFIA</option>
                         </select>
-                        <input type="text" placeholder="OTRO DEPORTE?" class="formdivs">
+                        <input type="text" id="otherSport" placeholder="OTRO DEPORTE?" class="formdivs">
                     <div class="checkboxes">
-                        <input type="checkbox" id="email">
+                        <input type="checkbox" id="desktop_email">
                         <label for="email">DESEA RECIBIR MAILS DE NUESTRO SITIO?</label>
                     </div>
                     <div class="checkboxes">
@@ -140,5 +140,6 @@
             </a>
         </div>
     </footer>
+    <script src="./form.js"></script>
 </body>
 </html>
