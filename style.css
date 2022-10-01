@@ -454,8 +454,18 @@
       border: solid salmon;
       border-radius: 15px;
       height: 100%; }
+      .tienda__main-section article button {
+        background-color: black;
+        border-radius: 15px;
+        color: white;
+        font-size: small;
+        padding: 5px;
+        position: relative; }
+        .tienda__main-section article button:hover {
+          transition: 3ms;
+          color: salmon; }
       .tienda__main-section article:hover:hover {
-        animation: articulos-hover .3s linear 0s 1 normal forwards; }
+        animation: articulos-hover .1s linear 0s 1 normal forwards; }
 
 @keyframes articulos-hover {
   0% {
@@ -473,18 +483,41 @@
       column-gap: 20px;
       width: 100%;
       height: 100%; }
+      .tienda__main-section-clothes article p {
+        margin-bottom: 8px; }
+      .tienda__main-section-clothes article h4 {
+        margin-top: 8px;
+        margin-bottom: 16px; }
+      .tienda__main-section-clothes article div {
+        height: 100%; }
     .tienda__main-section-accessories {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       column-gap: 20px;
       width: 100%;
       height: 100%; }
+      .tienda__main-section-accessories article p {
+        margin-bottom: 8px; }
+      .tienda__main-section-accessories article h4 {
+        margin-top: 8px;
+        margin-bottom: 16px; }
+      .tienda__main-section-accessories article div {
+        height: 100%; }
     .tienda__main-section-elements {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       column-gap: 20px;
       width: 100%;
       height: 100%; }
+      .tienda__main-section-elements article {
+        grid-template-columns: 1.5fr 2fr; }
+        .tienda__main-section-elements article p {
+          margin-bottom: 8px; }
+        .tienda__main-section-elements article h4 {
+          margin-top: 8px;
+          margin-bottom: 16px; }
+        .tienda__main-section-elements article div {
+          height: 100%; }
 
 .header {
   display: grid;

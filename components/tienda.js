@@ -87,7 +87,7 @@ const showClothes = (clothes) => {
 
     clothes.forEach(item =>{
         const article = document.createElement('article');
-        article.classList.add('articuloEnVenta');
+        article.classList.add('ropaEnVenta');
         
         article.innerHTML = `
             <img src="${item.img}" width=128px height=141.2px>
@@ -96,6 +96,7 @@ const showClothes = (clothes) => {
                 <p>${item.description}</p>
                 <p>${item.size}</p>
                 <p>$ ${item.price}</p>
+                <button>Ver mas...</button>
             </div>
         `;
 
@@ -109,15 +110,16 @@ const showAccessories = (accessories) =>{
 
     accessories.forEach(accessorie =>{
         let article = document.createElement('article');
-        article.classList.add('articuloEnVenta');
+        article.classList.add('accesoriosEnVenta');
         
         article.innerHTML = `
-            <img src="${accessorie.img}" width=128px height=141.2px>
+            <img src="${accessorie.img}" width=120px height=135px>
             <div class="card-content">
             <h4>${accessorie.name}</h4>
                 <p>${accessorie.description}</p>
                 <p>${accessorie.size}</p>
                 <p>$ ${accessorie.price}</p>
+                <button>Ver mas...</button>
             </div>
         `;
 
@@ -131,15 +133,16 @@ const showElements = (elements) => {
 
     elements.forEach(element =>{
         let article = document.createElement('article');
-        article.classList.add('articuloEnVenta');
+        article.classList.add('elementosEnVenta');
         
         article.innerHTML = `
-            <img src="${element.img}" width=128px height=141.2px>
+            <img src="${element.img}" width=135px height=135px>
             <div class="card-content">
             <h4>${element.name}</h4>
                 <p>${element.description}</p>
                 <p>${element.size}</p>
                 <p>$ ${element.price}</p>
+                <button>Ver mas...</button>
             </div>
         `;
 

@@ -24,9 +24,23 @@
                 border-radius: 15px;
                 height: 100%;
 
+                & button{
+                    background-color: black;
+                    border-radius: 15px;
+                    color: $principal-color;
+                    font-size: small;
+                    padding: 5px;
+                    position: relative;
+
+                    &:hover{
+                        transition: 3ms;
+                        color: salmon;
+                    }
+                }
+
                 &:hover{
                     &:hover{
-                        animation: articulos-hover .3s linear 0s 1 normal forwards;
+                        animation: articulos-hover .1s linear 0s 1 normal forwards;
                 
                         @keyframes articulos-hover {
                             0% {
@@ -55,6 +69,22 @@
                 column-gap: 20px;
                 width: 100%;
                 height: 100%;
+
+                & article {
+                    
+                    & p{
+                    margin-bottom: 8px;
+                    }
+
+                    & h4{
+                    margin-top: 8px;
+                    margin-bottom: 16px;
+                    }
+
+                    & div{
+                        height: 100%;
+                    }
+                }
             }
             &-accessories{
                 display: grid;
@@ -62,6 +92,22 @@
                 column-gap: 20px;
                 width: 100%;
                 height: 100%;
+
+                & article {
+                    
+                    & p{
+                    margin-bottom: 8px;
+                    }
+
+                    & h4{
+                    margin-top: 8px;
+                    margin-bottom: 16px;
+                    }
+
+                    & div{
+                        height: 100%;
+                    }
+                }
             }
             &-elements{
                 display: grid;
@@ -69,6 +115,23 @@
                 column-gap: 20px;
                 width: 100%;
                 height: 100%;
+
+                & article {
+                    grid-template-columns: 1.5fr 2fr;
+                    
+                    & p{
+                    margin-bottom: 8px;
+                    }
+
+                    & h4{
+                    margin-top: 8px;
+                    margin-bottom: 16px;
+                    }
+
+                    & div{
+                        height: 100%;
+                    }
+                }
             }
         }
 
