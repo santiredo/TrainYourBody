@@ -9,7 +9,7 @@
 
         &-section{
             display: grid;
-            grid-template-rows: 1fr 3fr 1fr 3fr 1fr 3fr;
+            grid-template-rows: repeat(3, 1fr);
             row-gap: 20px;
             align-items: center;
             justify-items: center;
@@ -24,42 +24,11 @@
                 border-radius: 15px;
                 height: 100%;
 
-                & button{
-                    background-color: black;
-                    border-radius: 15px;
-                    color: $principal-color;
-                    font-size: small;
-                    padding: 5px;
-                    position: relative;
-
-                    &:hover{
-                        transition: 3ms;
-                        color: salmon;
-                    }
-                }
-
-                &:hover{
-                    &:hover{
-                        animation: articulos-hover .1s linear 0s 1 normal forwards;
-                
-                        @keyframes articulos-hover {
-                            0% {
-                                box-shadow: 0 0 0 0 $principal-color;
-                                transform: scale(1) translateX(0) translateY(0);
-                            }
-                        
-                            100% {
-                                box-shadow: 12px 12px 20px -12px $principal-color;
-                                transform: scale(1) translateX(-5px) translateY(-5px);
-                            }
-                        }
-                    }
-                }
 
                 & h3{
                     margin: 0;
                     color: $principal-color;
-
+                    font-size: x-large;
                 }
             }
 
@@ -139,4 +108,166 @@
             @extend .subtitle;
         }
     }
+}
+
+.articulos_en_venta{
+
+    &:hover{
+        &:hover{
+            animation: articulos-hover .1s linear 0s 1 normal forwards;
+    
+            @keyframes articulos-hover {
+                0% {
+                    box-shadow: 0 0 0 0 $principal-color;
+                    transform: scale(1) translateX(0) translateY(0);
+                }
+            
+                100% {
+                    box-shadow: 12px 12px 20px -12px $principal-color;
+                    transform: scale(1) translateX(-5px) translateY(-5px);
+                }
+            }
+        }
+    }
+}
+
+.clothes-section{
+    display: grid;
+    grid-template-rows: 1fr 3fr;
+    align-items: center;
+    justify-items: center;
+/*     height: 100%;
+ */
+    & button{
+        background-color: black;
+        border-radius: 15px;
+        color: $principal-color;
+        font-size: small;
+        align-self: center;
+        width: 100px;
+        height: 50px;
+        padding: 5px;
+
+        &:hover{
+            transition: 3ms;
+            color: salmon;
+        }
+    }
+}
+.accessories-section{
+    @extend.clothes-section;
+}
+.elements-section{
+    @extend.clothes-section;
+}
+
+.ropaEnVenta{
+    display: none;
+    gap: 5px;
+    /* visibility: hidden; */
+    grid-template-columns: repeat(3, 1fr);
+    padding: 20px;
+
+    & div{
+        display: grid;
+        height: 100%;
+        width: 100%;
+        padding: 5px;
+
+        & button{
+            justify-self: right;
+            align-self: end;
+        }
+    }
+}
+
+.ropaEnVentaActiv{
+    display: grid;
+    gap: 5px;
+    /* visibility: hidden; */
+    grid-template-columns: repeat(3, 1fr);
+    padding: 20px;
+
+    & div{
+        display: grid;
+        height: 100%;
+        width: 100%;
+        padding: 5px;
+
+        & button{
+            justify-self: right;
+            align-self: end;
+        }
+    }
+}
+
+.noMorePortada{
+    display: none;
+}
+
+.accesoriosEnVenta{
+    @extend.ropaEnVenta;
+}
+
+.accesoriosEnVentaActiv{
+    display: grid;
+    gap: 5px;
+    /* visibility: hidden; */
+    grid-template-columns: repeat(3, 1fr);
+    padding: 20px;
+
+    & div{
+        display: grid;
+        height: 100%;
+        width: 100%;
+        padding: 5px;
+
+        & button{
+            justify-self: right;
+            align-self: end;
+        }
+    }
+}
+
+.elementosEnVenta{
+    @extend.ropaEnVenta;
+}
+
+.elementosEnVentaActiv{
+    display: grid;
+    gap: 5px;
+    /* visibility: hidden; */
+    grid-template-columns: repeat(3, 1fr);
+    padding: 20px;
+
+    & div{
+        display: grid;
+        height: 100%;
+        width: 100%;
+        padding: 5px;
+
+        & button{
+            justify-self: right;
+            align-self: end;
+        }
+    }
+}
+
+.verMas{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: 100%;
+    width: 100%;
+    gap: 10px;
+
+    & h3{
+        align-self: center;
+        justify-self: right;
+    }
+    
+
+}
+
+.card-content{
+    padding: 5px;
 }

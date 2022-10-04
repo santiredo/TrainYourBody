@@ -1,4 +1,4 @@
-function presentation(userName) {
+/* function presentation(userName) {
     return 'Hola, '+ userName + '!!\nBienvenid@ a nuestra tienda online';
 }
 
@@ -79,7 +79,7 @@ const finalBill = () =>{
     alert('Carrito:\n' + totalArticles + '\n\n      Descuento: $' + (totalPrice-priceDiscount) + '\n\n           Precio total de la compra: $' + priceDiscount);
 }
 
-productsInOrder();
+productsInOrder(); */
 
 
 const showClothes = (clothes) => {
@@ -87,16 +87,15 @@ const showClothes = (clothes) => {
 
     clothes.forEach(item =>{
         const article = document.createElement('article');
-        article.classList.add('ropaEnVenta');
+        article.classList.add('ropaPortada');
         
         article.innerHTML = `
             <img src="${item.img}" width=128px height=141.2px>
-            <div>
+            <div class="card-content">
             <h4>${item.name}</h4>
                 <p>${item.description}</p>
                 <p>${item.size}</p>
                 <p>$ ${item.price}</p>
-                <button>Ver mas...</button>
             </div>
         `;
 
@@ -110,7 +109,7 @@ const showAccessories = (accessories) =>{
 
     accessories.forEach(accessorie =>{
         let article = document.createElement('article');
-        article.classList.add('accesoriosEnVenta');
+        article.classList.add('accesoriosPortada');
         
         article.innerHTML = `
             <img src="${accessorie.img}" width=120px height=135px>
@@ -119,7 +118,6 @@ const showAccessories = (accessories) =>{
                 <p>${accessorie.description}</p>
                 <p>${accessorie.size}</p>
                 <p>$ ${accessorie.price}</p>
-                <button>Ver mas...</button>
             </div>
         `;
 
@@ -133,7 +131,7 @@ const showElements = (elements) => {
 
     elements.forEach(element =>{
         let article = document.createElement('article');
-        article.classList.add('elementosEnVenta');
+        article.classList.add('elementosPortada');
         
         article.innerHTML = `
             <img src="${element.img}" width=135px height=135px>
@@ -142,7 +140,6 @@ const showElements = (elements) => {
                 <p>${element.description}</p>
                 <p>${element.size}</p>
                 <p>$ ${element.price}</p>
-                <button>Ver mas...</button>
             </div>
         `;
 
