@@ -1,3 +1,7 @@
+import { allProducts } from './stock.js'
+import { updateTotalCart } from './updateCart.js';
+
+
 let cart = [];
 
 const validateRepeatedElement = (elementId) => {
@@ -5,8 +9,10 @@ const validateRepeatedElement = (elementId) => {
 
     if (repeatedElement) {
         repeatedElement.stock++;
-        
-        updateTotalCart(cart);
+
+        const stockElement = document.getElementById(`stock${repeatedElement.id}`)
+        stockElement.innerText = `${repeatedElement.stock}`
+        updateTotalCart(cart)
     } else {
         addToCart(elementId);
     }
@@ -25,7 +31,13 @@ const addToCart = (elementId) =>{
         <p>${element.specificName}</p>
         <p id="stock${element.id}">${element.stock}</p>
         <p>${element.price}</p>
-        <button id="eliminar${element.id}" value="${element.id}">X</button>
+        <button id="eliminar${element.id}" value="${element.id}">
+            <p>X</p>
+        </button>
     `;
-    cartContainer.appendChild(div);
+    cartContainer.append(div);
+    updateTotalCart(cart)
 }
+
+export {addToCart, validateRepeatedElement};
+export {cart};

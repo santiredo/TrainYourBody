@@ -23,9 +23,6 @@
                 <h1>TRAIN YOUR BODY</h1>
                 <img src="../images/workout.png" alt="icono de la pagina">
             </a>
-            <button id="openCart">
-                <img src="../tienda/shopping-cart.png" alt="icono del carrito">
-            </button>
         </div>        
         <nav class="navbar navbar-expand-lg bg-light">
             <div class="navbar__container">
@@ -43,8 +40,14 @@
     </header>
     <main class="tienda__main">
         <section class="tienda__main-subtitle">
-            <h2>Tienda</h2>
-            <p>Navega por nuestra tienda y llevate productos de optima calidad a muy buenos precios</p>
+            <div>
+                <h2>Tienda</h2>
+                <p>Navega por nuestra tienda y llevate productos de optima calidad a muy buenos precios</p>
+            </div>
+            <button id="openCart">
+                <p id="cartCounter">0</p>
+                <img src="../tienda/shopping-cart.png" alt="icono del carrito">
+            </button>
         </section>
         <section class="tienda__main-section">
             <div class="clothes-section">
@@ -78,18 +81,17 @@
                 </div>
             </div>
         </section>
-        <section class="cartSection">
-            <div>
-                <img src="../tienda/shopping-cart.png" alt="icono del carrito">
+        <div class="cartSection">
+            <div class="cartSectionDiv">
+                <img class="cartSectionDivimg" src="../tienda/shopping-cart.png" alt="icono del carrito">
                 <h3>CARRITO</h3>
                 <button id="closeCart">
                     <img src="../tienda/close.png" alt="cerrar el carrito">
                 </button>
             </div>
-            <div id="cartContainer">
-
-            </div>
-        </section>
+            <div id="cartContainer"></div>
+            <p>Precio total: $<span id="totalPrice"></span></p>
+        </div>
     </main>
     <footer class="footer">
         <div class="footer__sn">
@@ -119,7 +121,8 @@
     </footer>
     <script src="../components/stock.js" type="module"></script>
     <script src="../components/tienda.js" type="module"></script>
-    <script src="../components/cart.js" type="module"></script>
     <script src="../components/articles.js" type="module"></script>
+    <script src="../components/cart.js" type="module"></script>
+    <script src="../components/modalCart.js" type="module"></script>
 </body>
 </html>

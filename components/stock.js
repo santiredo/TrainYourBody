@@ -30,7 +30,7 @@ const clothes = [
         img: "../tienda/short_negro.png",
         stock:1
     },    
-]
+];
 
 const accessories = [
     {
@@ -63,7 +63,7 @@ const accessories = [
         img: "../tienda/medias_azules.png",
         stock:1
     },
-]
+];
 
 const elements = [
     {
@@ -193,7 +193,7 @@ const allClothes = [
         img: "../tienda/short_deportivo.png",
         stock:1
     },
-]
+];
 
 const allAccessories = [
     {
@@ -286,7 +286,7 @@ const allAccessories = [
         img: "../tienda/medias_blancas.png",
         stock:1
     },
-]
+];
 
 const allElements = [
     {
@@ -379,6 +379,8 @@ const allElements = [
         img: "../tienda/mancuerna_15k.png",
         stock:1
     },
-]
+];
 
 const allProducts = allClothes.concat(allAccessories, allElements);
+
+export {allProducts, allClothes, allAccessories, allElements,products, clothes, accessories, elements};

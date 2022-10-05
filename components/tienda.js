@@ -80,7 +80,7 @@ const finalBill = () =>{
 }
 
 productsInOrder(); */
-
+import { clothes, accessories, elements } from "./stock.js";
 
 const showClothes = (clothes) => {
     const onlyClothes = document.querySelector(".tienda__main-section-clothes");

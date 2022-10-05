@@ -1,3 +1,6 @@
+import { validateRepeatedElement } from "./cart.js";
+import { allClothes, allAccessories, allElements } from "./stock.js";
+
 const showAllClothes = (allClothes) => {
     let clotheSection = document.querySelector(".clothes-section");
 
@@ -25,7 +28,6 @@ const showAllClothes = (allClothes) => {
         const buttonAddToCart = document.getElementById(`button${element.id}`);
 
         buttonAddToCart.addEventListener('click', () => {
-            console.log(element.id);
             validateRepeatedElement(element.id);
         });
     });
@@ -61,7 +63,6 @@ const showAllAccessories = (allAccessories) => {
         const buttonAddToCart = document.getElementById(`button${element.id}`);
 
         buttonAddToCart.addEventListener('click', () => {
-            console.log(element.id);
             validateRepeatedElement(element.id);
         });
     });
@@ -93,11 +94,10 @@ const showAllElements = (allElements) => {
         `
         div.append(article);
 
-        
+
         const buttonAddToCart = document.getElementById(`button${element.id}`);
 
         buttonAddToCart.addEventListener('click', () => {
-            console.log(element.id);
             validateRepeatedElement(element.id);
         });
     });

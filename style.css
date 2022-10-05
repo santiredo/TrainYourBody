@@ -499,6 +499,25 @@
           margin-bottom: 16px; }
         .tienda__main-section-elements article div {
           height: 100%; }
+  .tienda__main-subtitle button {
+    display: grid;
+    position: fixed;
+    align-self: center;
+    justify-self: end;
+    margin-right: 100px;
+    background: linear-gradient(#181818, #242323, #181818);
+    border: transparent;
+    border-radius: 20px;
+    /* height: 32px;
+                width: 32px; */ }
+    .tienda__main-subtitle button img {
+      align-self: center;
+      justify-self: center; }
+    .tienda__main-subtitle button p {
+      color: white;
+      position: absolute;
+      left: 90%;
+      top: -20%; }
 
 .articulos_en_venta:hover:hover {
   animation: articulos-hover .1s linear 0s 1 normal forwards; }
@@ -607,6 +626,81 @@
 .card-content {
   padding: 5px; }
 
+.cartSection {
+  display: none;
+  background: linear-gradient(#181818, #242323, #181818);
+  border: solid salmon;
+  border-radius: 30px;
+  color: white;
+  position: fixed;
+  height: 100vh;
+  width: 33%;
+  left: 33%;
+  top: 40%; }
+  .cartSectionDiv {
+    display: grid;
+    height: 70px; }
+    .cartSectionDivimg {
+      margin: 5px 0 0 5px;
+      position: absolute;
+      left: 0; }
+    .cartSectionDiv h3 {
+      margin-top: 20px;
+      position: absolute;
+      left: 40%; }
+    .cartSectionDiv button {
+      background-color: transparent;
+      border: transparent;
+      margin-top: 15px;
+      position: absolute;
+      left: 90%; }
+
+.cartSectionActive {
+  display: grid;
+  background: linear-gradient(#181818, #242323, #181818);
+  border: solid salmon;
+  border-radius: 30px;
+  color: white;
+  position: fixed;
+  height: 90vh;
+  width: 33%;
+  left: 33%;
+  top: 5%; }
+  .cartSectionActiveDiv {
+    display: grid;
+    height: 70px; }
+    .cartSectionActiveDivimg {
+      margin: 5px 0 0 5px;
+      position: absolute;
+      left: 0; }
+    .cartSectionActiveDiv h3 {
+      margin-top: 20px;
+      position: absolute;
+      left: 40%; }
+    .cartSectionActiveDiv button {
+      background-color: transparent;
+      border: transparent;
+      margin-top: 15px;
+      position: absolute;
+      left: 90%; }
+
+.cartContainer {
+  height: 100%; }
+
+.productAddedToCart {
+  border-left: 5px solid lightblue;
+  border-bottom-left-radius: 3px;
+  border-top-left-radius: 3px;
+  margin: 5px 0;
+  padding: 5px 10px;
+  display: flex;
+  justify-content: space-between; }
+  .productAddedToCart button {
+    background-color: transparent;
+    border: none; }
+    .productAddedToCart button p {
+      color: white; }
+
 .header {
   display: grid;
   grid-area: header;
@@ -649,13 +743,6 @@
           color: salmon; }
       .header__title-tienda a img {
         display: none; }
-    .header__title-tienda button {
-      background-color: transparent;
-      border: none;
-      padding: 10px; }
-      .header__title-tienda button img {
-        align-self: center;
-        justify-self: start; }
 
 .navbar {
   background: linear-gradient(black, #181818);
