@@ -12,24 +12,62 @@
     border-bottom: $principal-border;
     align-items: center;
 
-    &__title a{
-        text-decoration: none;
-        color: $principal-color;
-        font-size: 25px;
-        align-self: center;
-        display: inline-block;
-        height: 100%;
-
-        & h1{
+    &__title{
+        & a{
+            text-decoration: none;
+            color: $principal-color;
+            font-size: 25px;
+            align-self: center;
+            display: inline-block;
+            height: 100%;
+            
+            & h1{
             transition: 0.5s;
 
-            &:hover{
-                color: salmon;
+                &:hover{
+                    color: salmon;
+                }
+            }
+
+            & img{
+                display: none;
             }
         }
 
-        & img{
-            display: none;
+        &-tienda{
+            display: grid;
+            grid-template-columns: 9fr 1fr;
+            & a{
+                text-decoration: none;
+                color: $principal-color;
+                font-size: 25px;
+                align-self: center;
+                display: inline-block;
+                height: 100%;
+                
+                & h1{
+                transition: 0.5s;
+    
+                    &:hover{
+                        color: salmon;
+                    }
+                }
+    
+                & img{
+                    display: none;
+                }
+            }
+
+            & button{
+                background-color: transparent;
+                border: none;
+                padding: 10px;
+
+                & img{
+                    align-self: center;
+                    justify-self: start;
+            }}
+            
         }
     }
 }

@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TrainYourBody | Ejercicios de musculacion</title>
-    <meta name="description" content="Aqui encontraras los mejores ejercicios de fuerza para incorporar a tus rutinas. Elije la zona que quieras entrenar y escoge el ejercicio que mas te guste">
+    <title>TrainYourBody | Tienda</title>
+    <meta name="description" content="Revisa nuestros articulos de calidad premium, ropa, accesorios, y hasta la posibilidad de armar tu propio gimnasio">
     <link rel="shortcut icon" href="../images/workout.png" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,11 +18,14 @@
 </head>
 <body class="tienda">
     <header class="header">
-        <div class="header__title">
-            <a href="../index.html">
+        <div class="header__title-tienda">
+            <a href="../index.html" >
                 <h1>TRAIN YOUR BODY</h1>
                 <img src="../images/workout.png" alt="icono de la pagina">
             </a>
+            <button id="openCart">
+                <img src="../tienda/shopping-cart.png" alt="icono del carrito">
+            </button>
         </div>        
         <nav class="navbar navbar-expand-lg bg-light">
             <div class="navbar__container">
@@ -76,7 +79,16 @@
             </div>
         </section>
         <section class="cartSection">
+            <div>
+                <img src="../tienda/shopping-cart.png" alt="icono del carrito">
+                <h3>CARRITO</h3>
+                <button id="closeCart">
+                    <img src="../tienda/close.png" alt="cerrar el carrito">
+                </button>
+            </div>
+            <div id="cartContainer">
 
+            </div>
         </section>
     </main>
     <footer class="footer">
@@ -105,9 +117,9 @@
             </a>
         </div>
     </footer>
-    <script src="../components/stock.js"></script>
-    <script src="../components/tienda.js"></script>
-    <script src="../components/cart.js"></script>
-    <script src="../components/articles.js"></script>
+    <script src="../components/stock.js" type="module"></script>
+    <script src="../components/tienda.js" type="module"></script>
+    <script src="../components/cart.js" type="module"></script>
+    <script src="../components/articles.js" type="module"></script>
 </body>
 </html>

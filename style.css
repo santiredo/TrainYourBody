@@ -633,6 +633,29 @@
         color: salmon; }
     .header__title a img {
       display: none; }
+  .header__title-tienda {
+    display: grid;
+    grid-template-columns: 9fr 1fr; }
+    .header__title-tienda a {
+      text-decoration: none;
+      color: white;
+      font-size: 25px;
+      align-self: center;
+      display: inline-block;
+      height: 100%; }
+      .header__title-tienda a h1 {
+        transition: 0.5s; }
+        .header__title-tienda a h1:hover {
+          color: salmon; }
+      .header__title-tienda a img {
+        display: none; }
+    .header__title-tienda button {
+      background-color: transparent;
+      border: none;
+      padding: 10px; }
+      .header__title-tienda button img {
+        align-self: center;
+        justify-self: start; }
 
 .navbar {
   background: linear-gradient(black, #181818);

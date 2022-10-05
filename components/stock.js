@@ -100,6 +100,8 @@ const elements = [
 
 const products = clothes.concat(accessories, elements);
 
+
+
 const allClothes = [
     {
         id: 1,
@@ -378,3 +380,5 @@ const allElements = [
         stock:1
     },
 ]
+
+const allProducts = allClothes.concat(allAccessories, allElements);

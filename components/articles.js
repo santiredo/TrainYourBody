@@ -16,11 +16,19 @@ const showAllClothes = (allClothes) => {
             <h4>${element.specificName}</h4>
                 <p>${element.size}</p>
                 <p>$ ${element.price}</p>
-                <button>Agregar al carrito</button>
+                <button id="button${element.id}">Agregar al carrito</button>
             </div>
         `
         div.append(article);
-    });    
+
+
+        const buttonAddToCart = document.getElementById(`button${element.id}`);
+
+        buttonAddToCart.addEventListener('click', () => {
+            console.log(element.id);
+            validateRepeatedElement(element.id);
+        });
+    });
 }
 showAllClothes(allClothes);
 
@@ -44,11 +52,19 @@ const showAllAccessories = (allAccessories) => {
             <h4>${element.specificName}</h4>
                 <p>${element.size}</p>
                 <p>$ ${element.price}</p>
-                <button>Agregar al carrito</button>
+                <button id="button${element.id}">Agregar al carrito</button>
             </div>
         `
         div.append(article);
-    });    
+
+
+        const buttonAddToCart = document.getElementById(`button${element.id}`);
+
+        buttonAddToCart.addEventListener('click', () => {
+            console.log(element.id);
+            validateRepeatedElement(element.id);
+        });
+    });
 }
 showAllAccessories(allAccessories);
 
@@ -72,11 +88,20 @@ const showAllElements = (allElements) => {
             <h4>${element.specificName}</h4>
                 <p>${element.size}</p>
                 <p>$ ${element.price}</p>
-                <button>Agregar al carrito</button>
+                <button id="button${element.id}">Agregar al carrito</button>
             </div>
         `
         div.append(article);
-    });    
+
+        
+        const buttonAddToCart = document.getElementById(`button${element.id}`);
+
+        buttonAddToCart.addEventListener('click', () => {
+            console.log(element.id);
+            validateRepeatedElement(element.id);
+        });
+    });
+    
 }
 showAllElements(allElements);
 
@@ -121,3 +146,6 @@ function mostrandoLosElementos() {
     });
 }
 mostrandoLosElementos();
+
+
+
