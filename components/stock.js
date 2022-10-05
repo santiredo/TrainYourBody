@@ -8,7 +8,7 @@ const clothes = [
         size: "Talle: Oversize M",
         description: "Remeras oversize con diseños super originales",
         img: "../tienda/remera_gris.png",
-        quantity:1
+        stock:1
     },
     {
         id: 2,
@@ -18,7 +18,7 @@ const clothes = [
         size: "Talle: Oversize M",
         description: "Buzos oversize, los mas comodos y estilosos",
         img: "../tienda/buzo_azul.png",
-        quantity:1
+        stock:1
     },
     {
         id: 3,
@@ -28,7 +28,7 @@ const clothes = [
         size: "Talle: M",
         description: "Shorts ideales para tus entrenamientos",
         img: "../tienda/short_negro.png",
-        quantity:1
+        stock:1
     },    
 ]
 
@@ -41,7 +41,7 @@ const accessories = [
         size: "Unico talle",
         description: "Gorras clasicas para llevar durante tus entrenamientos",
         img: "../tienda/gorra_negra.png",
-        quantity:1
+        stock:1
     },
     {
         id: 5,
@@ -51,7 +51,7 @@ const accessories = [
         size: "Unico talle",
         description: "Cinturones de powerlifting, ajustables a tu medida",
         img: "../tienda/cinturon_azul.png",
-        quantity:1
+        stock:1
     },
     {
         id: 6,
@@ -61,7 +61,7 @@ const accessories = [
         size: "Medida: 3/4",
         description: "Medias 3/4 para que te acompañen en tus entrenamientos",
         img: "../tienda/medias_azules.png",
-        quantity:1
+        stock:1
     },
 ]
 
@@ -74,7 +74,7 @@ const elements = [
         size: '20kg',
         description: "Barras olimpicas ideales para tu gimnasio",
         img: "../tienda/barra_20k.png",
-        quantity:1
+        stock:1
     },
     {
         id: 8,
@@ -84,7 +84,7 @@ const elements = [
         size: '10kg',
         description: "Discos olimpicas para llevar con la barra",
         img: "../tienda/disco_10k.png",
-        quantity:1
+        stock:1
     },
     {
         id: 9,
@@ -94,7 +94,7 @@ const elements = [
         size: '15kg',
         description: "Mancuernas para completar tu set de barras y pesas",
         img: "../tienda/mancuerna_15k.png",
-        quantity:1
+        stock:1
     },
 ];
 
@@ -109,7 +109,7 @@ const allClothes = [
         size: "Talle: Oversize M",
         description: "Remeras oversize con diseños super originales",
         img: "../tienda/remera_gris.png",
-        quantity:1
+        stock:1
     },
     {
         id: 10,
@@ -119,7 +119,7 @@ const allClothes = [
         size: "Talle: Oversize M",
         description: "Remeras oversize con diseños super originales",
         img: "../tienda/remera_mujer.png",
-        quantity:1
+        stock:1
     },
     {
         id: 11,
@@ -129,7 +129,7 @@ const allClothes = [
         size: "Talle: M",
         description: "Remeras oversize con diseños super originales",
         img: "../tienda/remera_futbol.png",
-        quantity:1
+        stock:1
     },
     {
         id: 2,
@@ -139,7 +139,7 @@ const allClothes = [
         size: "Talle: Oversize M",
         description: "Buzos oversize, los mas comodos y estilosos",
         img: "../tienda/buzo_azul.png",
-        quantity:1
+        stock:1
     },
     {
         id: 12,
@@ -149,7 +149,7 @@ const allClothes = [
         size: "Talle: Oversize M",
         description: "Buzos oversize, los mas comodos y estilosos",
         img: "../tienda/buzo_gris.png",
-        quantity:1
+        stock:1
     },
     {
         id: 13,
@@ -159,7 +159,7 @@ const allClothes = [
         size: "Talle: M",
         description: "Buzos oversize, los mas comodos y estilosos",
         img: "../tienda/buzo_deportivo.png",
-        quantity:1
+        stock:1
     },
     {
         id: 3,
@@ -169,7 +169,7 @@ const allClothes = [
         size: "Talle: M",
         description: "Shorts ideales para tus entrenamientos",
         img: "../tienda/short_negro.png",
-        quantity:1
+        stock:1
     },
     {
         id: 14,
@@ -179,7 +179,7 @@ const allClothes = [
         size: "Talle: M",
         description: "Shorts ideales para tus entrenamientos",
         img: "../tienda/short_blanco.png",
-        quantity:1
+        stock:1
     },
     {
         id: 15,
@@ -189,7 +189,7 @@ const allClothes = [
         size: "Talle: M",
         description: "Shorts ideales para tus entrenamientos",
         img: "../tienda/short_deportivo.png",
-        quantity:1
+        stock:1
     },
 ]
 
@@ -202,7 +202,7 @@ const allAccessories = [
         size: "Unico talle",
         description: "Gorras clasicas para llevar durante tus entrenamientos",
         img: "../tienda/gorra_negra.png",
-        quantity:1
+        stock:1
     },
     {
         id: 16,
@@ -212,7 +212,7 @@ const allAccessories = [
         size: "Unico talle",
         description: "Gorras clasicas para llevar durante tus entrenamientos",
         img: "../tienda/gorra_blanca.png",
-        quantity:1
+        stock:1
     },
     {
         id: 17,
@@ -222,7 +222,7 @@ const allAccessories = [
         size: "Unico talle",
         description: "Gorras clasicas para llevar durante tus entrenamientos",
         img: "../tienda/gorra_turquesa.png",
-        quantity:1
+        stock:1
     },
     {
         id: 5,
@@ -232,7 +232,7 @@ const allAccessories = [
         size: "Unico talle",
         description: "Cinturones de powerlifting, ajustables a tu medida",
         img: "../tienda/cinturon_azul.png",
-        quantity:1
+        stock:1
     },
     {
         id: 18,
@@ -242,7 +242,7 @@ const allAccessories = [
         size: "Unico talle",
         description: "Cinturones de powerlifting, ajustables a tu medida",
         img: "../tienda/cinturon_marron.png",
-        quantity:1
+        stock:1
     },
     {
         id: 19,
@@ -252,7 +252,7 @@ const allAccessories = [
         size: "Unico talle",
         description: "Cinturones de powerlifting, ajustables a tu medida",
         img: "../tienda/cinturon_negro.png",
-        quantity:1
+        stock:1
     },
     {
         id: 6,
@@ -262,7 +262,7 @@ const allAccessories = [
         size: "Medida: 3/4",
         description: "Medias 3/4 para que te acompañen en tus entrenamientos",
         img: "../tienda/medias_negras.png",
-        quantity:1
+        stock:1
     },
     {
         id: 20,
@@ -272,7 +272,7 @@ const allAccessories = [
         size: "Medida: 3/4",
         description: "Medias 3/4 para que te acompañen en tus entrenamientos",
         img: "../tienda/medias_azules.png",
-        quantity:1
+        stock:1
     },
     {
         id: 21,
@@ -282,7 +282,7 @@ const allAccessories = [
         size: "Medida: 3/4",
         description: "Medias 3/4 para que te acompañen en tus entrenamientos",
         img: "../tienda/medias_blancas.png",
-        quantity:1
+        stock:1
     },
 ]
 
@@ -295,7 +295,7 @@ const allElements = [
         size: '20kg',
         description: "Barras olimpicas de 20kg ideales para tu gimnasio",
         img: "../tienda/barra_20k.png",
-        quantity:1
+        stock:1
     },
     {
         id: 22,
@@ -305,7 +305,7 @@ const allElements = [
         size: '10kg',
         description: "Barras olimpicas ideales para tu gimnasio",
         img: "../tienda/barra_10k.png",
-        quantity:1
+        stock:1
     },
     {
         id: 8,
@@ -315,7 +315,7 @@ const allElements = [
         size: '5kg',
         description: "Discos olimpicas para llevar con la barra",
         img: "../tienda/disco_5k.png",
-        quantity:1
+        stock:1
     },
     {
         id: 23,
@@ -325,7 +325,7 @@ const allElements = [
         size: '10kg',
         description: "Discos olimpicas para llevar con la barra",
         img: "../tienda/disco_10k.png",
-        quantity:1
+        stock:1
     },
     {
         id: 24,
@@ -335,7 +335,7 @@ const allElements = [
         size: '15kg',
         description: "Pesas olimpicas para llevar con la barra",
         img: "../tienda/disco_15k.png",
-        quantity:1
+        stock:1
     },
     {
         id: 25,
@@ -345,7 +345,7 @@ const allElements = [
         size: '20kg',
         description: "Pesas olimpicas para llevar con la barra",
         img: "../tienda/disco_20k.png",
-        quantity:1
+        stock:1
     },
     {
         id: 9,
@@ -355,7 +355,7 @@ const allElements = [
         size: '5kg',
         description: "Mancuernas para completar tu set de barras y pesas",
         img: "../tienda/mancuerna_5k.png",
-        quantity:1
+        stock:1
     },
     {
         id: 26,
@@ -365,7 +365,7 @@ const allElements = [
         size: '10kg',
         description: "Mancuernas para completar tu set de barras y pesas",
         img: "../tienda/mancuerna_10k.png",
-        quantity:1
+        stock:1
     },
     {
         id: 27,
@@ -375,6 +375,6 @@ const allElements = [
         size: '15kg',
         description: "Mancuernas para completar tu set de barras y pesas",
         img: "../tienda/mancuerna_15k.png",
-        quantity:1
+        stock:1
     },
 ]

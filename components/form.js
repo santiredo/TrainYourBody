@@ -1,5 +1,6 @@
-const taskForm = document.querySelector(".contacto__form");
+const queries = JSON.parse(localStorage.getItem('queries')) || [];
 
+const taskForm = document.querySelector(".contacto__form");
 
 taskForm.addEventListener('submit', (event) => {
     event.preventDefault();
@@ -18,9 +19,20 @@ function gettingValues(){
     const sportSelection = document.getElementById('sportSelection').value;
     const otherSport = document.getElementById('otherSport').value;
 
+    const query = {
+        userName: userName,
+        phoneNumber: phoneNumber,
+        doubts: doubts,
+        surname: surname,
+        email: email,
+        sportSelection: sportSelection,
+        otherSport: otherSport
+    }
+
+    queries.push(query);
     storingUserData();
 }
 
 function storingUserData(){
-    localStorage.setItem(email.value, userName.value + '\n' + surname.value + '\n' + phoneNumber.value + '\n' + sportSelection.value + '\n' + otherSport.value + '\n' + doubts.value);
+    localStorage.setItem('queries', JSON.stringify(queries));
 }
