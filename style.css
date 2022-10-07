@@ -663,6 +663,7 @@
   color: white;
   position: fixed;
   height: 90vh;
+  overflow: auto;
   width: 33%;
   left: 33%;
   top: 5%; }

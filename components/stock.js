@@ -383,4 +383,4 @@ const allElements = [
 
 const allProducts = allClothes.concat(allAccessories, allElements);
 
-export {allProducts, allClothes, allAccessories, allElements,products, clothes, accessories, elements};
+export {allProducts, allClothes, allAccessories, allElements, products, clothes, accessories, elements};

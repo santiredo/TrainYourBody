@@ -1,5 +1,73 @@
 import { validateRepeatedElement } from "./cart.js";
-import { allClothes, allAccessories, allElements } from "./stock.js";
+
+
+const showClothes = (clothes) => {
+    const onlyClothes = document.querySelector(".tienda__main-section-clothes");
+
+    clothes.forEach(item =>{
+        const article = document.createElement('article');
+        article.classList.add('ropaPortada');
+        
+        article.innerHTML = `
+            <img src="${item.img}" width=128px height=141.2px>
+            <div class="card-content">
+            <h4>${item.name}</h4>
+                <p>${item.description}</p>
+                <p>${item.size}</p>
+                <p>$ ${item.price}</p>
+            </div>
+        `;
+
+        onlyClothes.appendChild(article);
+    });
+}
+
+const showAccessories = (accessories) =>{
+
+    const onlyAccessories = document.querySelector(".tienda__main-section-accessories");
+
+    accessories.forEach(accessorie =>{
+        let article = document.createElement('article');
+        article.classList.add('accesoriosPortada');
+        
+        article.innerHTML = `
+            <img src="${accessorie.img}" width=120px height=135px>
+            <div class="card-content">
+            <h4>${accessorie.name}</h4>
+                <p>${accessorie.description}</p>
+                <p>${accessorie.size}</p>
+                <p>$ ${accessorie.price}</p>
+            </div>
+        `;
+
+        onlyAccessories.appendChild(article);
+
+    });
+}
+
+const showElements = (elements) => {
+    const onlyElements = document.querySelector(".tienda__main-section-elements");
+
+    elements.forEach(element =>{
+        let article = document.createElement('article');
+        article.classList.add('elementosPortada');
+        
+        article.innerHTML = `
+            <img src="${element.img}" width=135px height=135px>
+            <div class="card-content">
+            <h4>${element.name}</h4>
+                <p>${element.description}</p>
+                <p>${element.size}</p>
+                <p>$ ${element.price}</p>
+            </div>
+        `;
+
+        onlyElements.appendChild(article);
+
+    });
+};
+
+
 
 const showAllClothes = (allClothes) => {
     let clotheSection = document.querySelector(".clothes-section");
@@ -32,8 +100,6 @@ const showAllClothes = (allClothes) => {
         });
     });
 }
-showAllClothes(allClothes);
-
 
 
 const showAllAccessories = (allAccessories) => {
@@ -67,8 +133,6 @@ const showAllAccessories = (allAccessories) => {
         });
     });
 }
-showAllAccessories(allAccessories);
-
 
 
 const showAllElements = (allElements) => {
@@ -103,7 +167,6 @@ const showAllElements = (allElements) => {
     });
     
 }
-showAllElements(allElements);
 
 
 
@@ -117,8 +180,6 @@ function mostrandoLaRopa() {
         noMorePortada.classList.toggle('noMorePortada');
     });
 }
-mostrandoLaRopa();
-
 
 
 function mostrandoLosAccesorios() {
@@ -131,8 +192,6 @@ function mostrandoLosAccesorios() {
         noMorePortada.classList.toggle('noMorePortada');
     });
 }
-mostrandoLosAccesorios();
-
 
 
 function mostrandoLosElementos() {
@@ -145,7 +204,6 @@ function mostrandoLosElementos() {
         noMorePortada.classList.toggle('noMorePortada');
     });
 }
-mostrandoLosElementos();
 
 
-
+export {showClothes, showAccessories, showElements, showAllClothes, showAllAccessories, showAllElements, mostrandoLaRopa, mostrandoLosAccesorios, mostrandoLosElementos}
