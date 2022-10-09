@@ -689,18 +689,23 @@
   height: 100%; }
 
 .productAddedToCart {
-  border-left: 5px solid lightblue;
-  border-bottom-left-radius: 3px;
-  border-top-left-radius: 3px;
-  margin: 5px 0;
-  padding: 5px 10px;
   display: flex;
+  padding-left: 5px;
+  padding-right: 5px;
   justify-content: space-between; }
+  .productAddedToCart img {
+    align-self: center; }
+  .productAddedToCart p {
+    margin: 0; }
   .productAddedToCart button {
-    background-color: transparent;
-    border: none; }
-    .productAddedToCart button p {
-      color: white; }
+    display: grid;
+    color: salmon;
+    height: 20px;
+    width: 20px;
+    background-color: salmon;
+    border-radius: 40px;
+    align-items: center;
+    justify-items: center; }
 
 .header {
   display: grid;

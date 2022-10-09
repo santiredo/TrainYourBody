@@ -1,6 +1,6 @@
 import { allProducts } from '../components/stock.js'
 import { updateTotalCart } from '../components/updateCart.js';
-import { getCartInStorage } from './storageCart.js';
+import { getCartInStorage } from '../components/storageCart.js';
 
 
 let cart = [];
@@ -13,10 +13,10 @@ const validateRepeatedElement = (elementId) => {
     const repeatedElement = cart.find(element => element.id === elementId);
 
     if (repeatedElement) {
-        repeatedElement.stock++;
+        repeatedElement.amount++;
 
-        const stockElement = document.getElementById(`stock${repeatedElement.id}`);
-        stockElement.innerText = `${repeatedElement.stock}`;
+        const amountElement = document.getElementById(`amount${repeatedElement.id}`);
+        amountElement.innerText = `${repeatedElement.amount}`;
         updateTotalCart(cart);
     } else {
         addToCart(elementId);
@@ -32,10 +32,9 @@ const addToCart = (elementId) =>{
     div.innerHTML = `
         <img src="${element.img}" width=16px height=16px>
         <p>${element.specificName}</p>
-        <p id="stock${element.id}">${element.stock}</p>
+        <p id="amount${element.id}">1</p>
         <p>${element.price}</p>
-        <button id="eliminar${element.id}" value="${element.id}">
-            <p>X</p>
+        <button id="eliminar${element.id}" value="${element.id}" class="delete-button">
         </button>
     `;
     cartContainer.append(div);
@@ -51,25 +50,24 @@ const showAllItemsInCart = (cart) => {
         div.innerHTML = `
             <img src="${element.img}" width=16px height=16px>
             <p>${element.specificName}</p>
-            <p id="stock${element.id}">${element.stock}</p>
+            <p id="amount${element.id}">1</p>
             <p>${element.price}</p>
-            <button id="${element.id}" value="${element.id}" class="delete-button">
-                <p>X</p>
+            <button id="eliminar${element.id}" value="${element.id}" class="delete-button">
             </button>
         `;
         cartContainer.append(div);
-    });
-    
+    });   
 }
 
-const deleteElementInCart = (elementId) => {
-    const storageCart = getCartInStorage();
+const deleteCartItems = (elementId) => {
+    const cartStorage = getCartInStorage();
+    const updatedCart = cart.indexOf(element => elementId == element.id);
+    cart.splice(updatedCart, 1)
 
-    const updatedCart = storageCart.filter(element => element.id != elementId);
-
-    updateTotalCart(updatedCart);
-    showAllItemsInCart(updatedCart);
+    updateTotalCart(cart);
+    showAllItemsInCart(cart);
 }
 
 
-export {addToCart, validateRepeatedElement, showAllItemsInCart, deleteElementInCart};
+
+export {addToCart, validateRepeatedElement, showAllItemsInCart, deleteCartItems};

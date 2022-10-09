@@ -2,19 +2,19 @@ import { saveCartInStorage, getCartInStorage } from "../components/storageCart.j
 
 
 const updateTotalCart = (cart) => {
-    const totalStock = cart.reduce((acc, element) => acc + element.stock, 0);
-    const totalPurchase = cart.reduce((acc, element) => acc + (element.price * element.stock), 0);
+    const totalAmount = cart.reduce((acc, element) => acc + element.amount, 0);
+    const totalPurchase = cart.reduce((acc, element) => acc + (element.price * element.amount), 0);
 
-    showTotalCart(totalStock, totalPurchase);
+    showTotalCart(totalAmount, totalPurchase);
     saveCartInStorage(cart);
     getCartInStorage(cart);
 };
 
-const showTotalCart = (totalStock, totalPurchase) => {
+const showTotalCart = (totalAmount, totalPurchase) => {
     const cartCounter = document.getElementById('cartCounter');
     const totalPrice = document.getElementById('totalPrice');
 
-    cartCounter.innerText = totalStock;
+    cartCounter.innerText = totalAmount;
     totalPrice.innerText = totalPurchase;
 };
 

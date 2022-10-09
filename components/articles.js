@@ -1,4 +1,4 @@
-import { validateRepeatedElement } from "./cart.js";
+import { validateRepeatedElement } from "../components/cart.js";
 
 
 const showClothes = (clothes) => {
