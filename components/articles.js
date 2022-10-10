@@ -87,7 +87,7 @@ const showAllClothes = (allClothes) => {
             <h4>${element.specificName}</h4>
                 <p>${element.size}</p>
                 <p>$ ${element.price}</p>
-                <button id="button${element.id}">Agregar al carrito</button>
+                <button id="button${element.id}" class="addToCartButton">Agregar al carrito</button>
             </div>
         `
         div.append(article);
@@ -97,6 +97,12 @@ const showAllClothes = (allClothes) => {
 
         buttonAddToCart.addEventListener('click', () => {
             validateRepeatedElement(element.id);
+
+            Swal.fire({
+                title: 'Genial!!',
+                text: 'Producto añadido al carrito',
+                icon: 'success'
+            });
         });
     });
 }
@@ -120,7 +126,7 @@ const showAllAccessories = (allAccessories) => {
             <h4>${element.specificName}</h4>
                 <p>${element.size}</p>
                 <p>$ ${element.price}</p>
-                <button id="button${element.id}">Agregar al carrito</button>
+                <button id="button${element.id}" class="addToCartButton">Agregar al carrito</button>
             </div>
         `
         div.append(article);
@@ -130,6 +136,12 @@ const showAllAccessories = (allAccessories) => {
 
         buttonAddToCart.addEventListener('click', () => {
             validateRepeatedElement(element.id);
+
+            Swal.fire({
+                title: 'Genial!!',
+                text: 'Producto añadido al carrito',
+                icon: 'success'
+            });
         });
     });
 }
@@ -153,7 +165,7 @@ const showAllElements = (allElements) => {
             <h4>${element.specificName}</h4>
                 <p>${element.size}</p>
                 <p>$ ${element.price}</p>
-                <button id="button${element.id}">Agregar al carrito</button>
+                <button id="button${element.id}" class="addToCartButton">Agregar al carrito</button>
             </div>
         `
         div.append(article);
@@ -163,6 +175,14 @@ const showAllElements = (allElements) => {
 
         buttonAddToCart.addEventListener('click', () => {
             validateRepeatedElement(element.id);
+
+            Swal.fire({
+                title: 'Genial!!',
+                text: 'Producto añadido al carrito',
+                icon: 'success',
+                showConfirmButton: 'false',
+                timer: 2000
+            });
         });
     });
     
@@ -205,5 +225,4 @@ function mostrandoLosElementos() {
     });
 }
 
-
-export {showClothes, showAccessories, showElements, showAllClothes, showAllAccessories, showAllElements, mostrandoLaRopa, mostrandoLosAccesorios, mostrandoLosElementos}
+export {showClothes, showAccessories, showElements, showAllClothes, showAllAccessories, showAllElements, mostrandoLaRopa, mostrandoLosAccesorios, mostrandoLosElementos }

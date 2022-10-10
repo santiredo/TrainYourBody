@@ -6,10 +6,10 @@ import { getCartInStorage } from '../components/storageCart.js';
 let cart = [];
 
 const validateRepeatedElement = (elementId) => {
-    if (localStorage.getItem('cart')) {
-        cart = getCartInStorage();
-    }
-    
+
+    // ACA AGREGUE UN OPERADOR AVANZADO
+    localStorage.getItem('cart') ? cart = getCartInStorage() : cart = []
+
     const repeatedElement = cart.find(element => element.id === elementId);
 
     if (repeatedElement) {
@@ -61,11 +61,10 @@ const showAllItemsInCart = (cart) => {
 
 const deleteCartItems = (elementId) => {
     const cartStorage = getCartInStorage();
-    const updatedCart = cart.indexOf(element => elementId == element.id);
-    cart.splice(updatedCart, 1)
+    const updatedCart = cartStorage.filter(element => element.id != elementId)
 
-    updateTotalCart(cart);
-    showAllItemsInCart(cart);
+    updateTotalCart(updatedCart);
+    showAllItemsInCart(updatedCart);
 }
 
 
