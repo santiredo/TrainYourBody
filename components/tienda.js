@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', () => {
         updateTotalCart(cart);
     }
 
-    localStorage.getItem('cart') ? operadorAvanzado2 : cart = []
+    localStorage.getItem('cart') && operadorAvanzado2 
 });
 
 

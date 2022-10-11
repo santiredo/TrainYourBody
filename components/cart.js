@@ -9,11 +9,11 @@ let cart = [];
 const validateRepeatedElement = (elementId) => {
 
     // ACA AGREGUE UN OPERADOR AVANZADO
-    localStorage.getItem('cart') ? cart = getCartInStorage() : cart = []
+    localStorage.getItem('cart') && (cart = getCartInStorage());
 
     const repeatedElement = cart.find(element => element.id === elementId);
 
-    // ACA AGREGUE OTRO OPERADOR AVANZADO pero no me funciono
+    // ACA INTENTE AGREGAR OTRO OPERADOR AVANZADO pero no me funciono
 /*     repeatedElement ? operadorAvanzado : addToCart(elementId);
  */
     if (repeatedElement) {
@@ -39,6 +39,7 @@ const addToCart = (elementId) =>{
         <p id="amount${element.id}">1</p>
         <p>${element.price}</p>
         <button id="eliminar${element.id}" value="${element.id}" class="delete-button">
+            x
         </button>
     `;
     cartContainer.append(div);
@@ -58,6 +59,7 @@ const showAllItemsInCart = (cart) => {
             <p id="amount${element.id}">1</p>
             <p>${element.price}</p>
             <button id="eliminar${element.id}" value="${element.id}" class="delete-button">
+                x
             </button>
         `;
         cartContainer.append(div);
