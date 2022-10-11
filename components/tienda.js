@@ -18,12 +18,15 @@ document.addEventListener('DOMContentLoaded', () => {
     mostrandoLosAccesorios();
     mostrandoLosElementos();
 
-    if (localStorage.getItem('cart')){
+    // Aca agregue un operador avanzado
+    function operadorAvanzado2() {
         const cart = getCartInStorage();
 
         showAllItemsInCart(cart);
         updateTotalCart(cart);
-    };
+    }
+
+    localStorage.getItem('cart') ? operadorAvanzado2 : cart = []
 });
 
 

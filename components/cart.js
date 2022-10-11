@@ -1,7 +1,8 @@
 import { allProducts } from '../components/stock.js'
 import { updateTotalCart } from '../components/updateCart.js';
 import { getCartInStorage } from '../components/storageCart.js';
-
+/* import { operadorAvanzado } from '../components/operadoresAvanzados.js'
+ */
 
 let cart = [];
 
@@ -12,6 +13,9 @@ const validateRepeatedElement = (elementId) => {
 
     const repeatedElement = cart.find(element => element.id === elementId);
 
+    // ACA AGREGUE OTRO OPERADOR AVANZADO pero no me funciono
+/*     repeatedElement ? operadorAvanzado : addToCart(elementId);
+ */
     if (repeatedElement) {
         repeatedElement.amount++;
 
@@ -44,6 +48,7 @@ const addToCart = (elementId) =>{
 const showAllItemsInCart = (cart) => {
     const cartContainer = document.getElementById('cartContainer');
 
+    cartContainer.innerHTML = '';
     cart.forEach(element => {
         const div = document.createElement('div')
         div.classList.add('productAddedToCart')
@@ -69,4 +74,4 @@ const deleteCartItems = (elementId) => {
 
 
 
-export {addToCart, validateRepeatedElement, showAllItemsInCart, deleteCartItems};
+export {addToCart, validateRepeatedElement, showAllItemsInCart, deleteCartItems, cart};

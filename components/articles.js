@@ -99,9 +99,11 @@ const showAllClothes = (allClothes) => {
             validateRepeatedElement(element.id);
 
             Swal.fire({
-                title: 'Genial!!',
+                title: 'Genial!',
                 text: 'Producto añadido al carrito',
-                icon: 'success'
+                icon: 'success',
+                showConfirmButton: false,
+                timer: 1000
             });
         });
     });
@@ -138,9 +140,11 @@ const showAllAccessories = (allAccessories) => {
             validateRepeatedElement(element.id);
 
             Swal.fire({
-                title: 'Genial!!',
+                title: 'Genial!',
                 text: 'Producto añadido al carrito',
-                icon: 'success'
+                icon: 'success',
+                showConfirmButton: false,
+                timer: 1000
             });
         });
     });
@@ -177,11 +181,11 @@ const showAllElements = (allElements) => {
             validateRepeatedElement(element.id);
 
             Swal.fire({
-                title: 'Genial!!',
+                title: 'Genial',
                 text: 'Producto añadido al carrito',
                 icon: 'success',
-                showConfirmButton: 'false',
-                timer: 2000
+                showConfirmButton: false,
+                timer: 1300
             });
         });
     });
