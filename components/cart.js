@@ -13,9 +13,6 @@ const validateRepeatedElement = (elementId) => {
 
     const repeatedElement = cart.find(element => element.id === elementId);
 
-    // ACA INTENTE AGREGAR OTRO OPERADOR AVANZADO pero no me funciono
-/*     repeatedElement ? operadorAvanzado : addToCart(elementId);
- */
     if (repeatedElement) {
         repeatedElement.amount++;
 
