@@ -1,4 +1,4 @@
-import { validateRepeatedElement } from "../components/cart.js";
+import { validateRepeatedElement } from "./cart.js";
 
 
 const showClothes = (clothes) => {
@@ -138,7 +138,7 @@ const showAllAccessories = (allAccessories) => {
 
         buttonAddToCart.addEventListener('click', () => {
             validateRepeatedElement(element.id);
-
+            
             Swal.fire({
                 title: 'Genial!',
                 text: 'Producto añadido al carrito',
