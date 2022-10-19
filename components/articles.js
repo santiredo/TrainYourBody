@@ -1,4 +1,5 @@
 import { validateRepeatedElement } from "./cart.js";
+import { getAccessories, getClothes, getElements } from "./getProducts.js";
 
 
 const showClothes = (clothes) => {
@@ -69,8 +70,10 @@ const showElements = (elements) => {
 
 
 
-const showAllClothes = (allClothes) => {
+const showAllClothes = async () => {
     let clotheSection = document.querySelector(".clothes-section");
+
+    const allClothes = await getClothes();
 
     let div = document.createElement('div');
     div.classList.add('ropaEnVenta');
@@ -110,8 +113,10 @@ const showAllClothes = (allClothes) => {
 }
 
 
-const showAllAccessories = (allAccessories) => {
+const showAllAccessories = async () => {
     let accessorieSection = document.querySelector(".accessories-section");
+
+    const allAccessories = await getAccessories();
 
     let div = document.createElement('div');
     div.classList.add('accesoriosEnVenta');
@@ -151,8 +156,10 @@ const showAllAccessories = (allAccessories) => {
 }
 
 
-const showAllElements = (allElements) => {
+const showAllElements = async () => {
     let elementSection = document.querySelector(".elements-section");
+
+    const allElements = await getElements();
 
     let div = document.createElement('div');
     div.classList.add('elementosEnVenta');
@@ -200,8 +207,8 @@ function mostrandoLaRopa() {
     const noMorePortada = document.querySelector(".tienda__main-section-clothes");
 
     showRopaEnVenta.addEventListener('click', () => {
-        ropaEnVenta.classList.toggle('ropaEnVentaActiv');
         noMorePortada.classList.toggle('noMorePortada');
+        ropaEnVenta.classList.toggle('ropaEnVentaActiv');
     });
 }
 
@@ -212,8 +219,8 @@ function mostrandoLosAccesorios() {
     const noMorePortada = document.querySelector(".tienda__main-section-accessories");
 
     showAccesoriosEnVenta.addEventListener('click', () => {
-        accesoriosEnVenta.classList.toggle('accesoriosEnVentaActiv');
         noMorePortada.classList.toggle('noMorePortada');
+        accesoriosEnVenta.classList.toggle('accesoriosEnVentaActiv');
     });
 }
 
@@ -224,8 +231,8 @@ function mostrandoLosElementos() {
     const noMorePortada = document.querySelector(".tienda__main-section-elements");
 
     showElementosEnVenta.addEventListener('click', () => {
-        elementosEnVenta.classList.toggle('elementosEnVentaActiv');
         noMorePortada.classList.toggle('noMorePortada');
+        elementosEnVenta.classList.toggle('elementosEnVentaActiv');
     });
 }
 

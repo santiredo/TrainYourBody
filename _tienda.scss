@@ -209,7 +209,6 @@
 .ropaEnVentaActiv{
     display: grid;
     gap: 5px;
-    /* visibility: hidden; */
     grid-template-columns: repeat(3, 1fr);
     padding: 20px;
 
@@ -237,7 +236,6 @@
 .accesoriosEnVentaActiv{
     display: grid;
     gap: 5px;
-    /* visibility: hidden; */
     grid-template-columns: repeat(3, 1fr);
     padding: 20px;
 
@@ -261,7 +259,6 @@
 .elementosEnVentaActiv{
     display: grid;
     gap: 5px;
-    /* visibility: hidden; */
     grid-template-columns: repeat(3, 1fr);
     padding: 20px;
 

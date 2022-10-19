@@ -4,7 +4,7 @@ import { getCartInStorage } from '../components/storageCart.js';
 /* import { operadorAvanzado } from '../components/operadoresAvanzados.js'
  */
 
-let cart = JSON.parse(localStorage.getItem('cart')) || [];
+let cart = /* JSON.parse(localStorage.getItem('cart')) || */ [];
 
 const validateRepeatedElement = (elementId) => {
 
@@ -54,7 +54,7 @@ const showAllItemsInCart = (cart) => {
         div.innerHTML = `
             <img src="${element.img}" width=16px height=16px>
             <p>${element.specificName}</p>
-            <p id="amount${element.id}">1</p>
+            <p id="amount${element.id}">${element.amount}</p>
             <p>${element.price}</p>
             <button id="eliminar${element.id}" value="${element.id}" class="delete-button">
                 x

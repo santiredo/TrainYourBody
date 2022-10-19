@@ -1,0 +1,92 @@
+[    
+    {
+        "id": 7,
+        "name": "BARRAS",
+        "specificName": "Barra olimpica",
+        "price": 5000,
+        "size": "20kg",
+        "description": "Barras olimpicas de 20kg ideales para tu gimnasio",
+        "img": "../tienda/barra_20k.png",
+        "amount":1
+    },
+    {
+        "id": 22,
+        "name": "BARRAS",
+        "specificName": "Barra olimpica",
+        "price": 4000,
+        "size": "10kg",
+        "description": "Barras olimpicas ideales para tu gimnasio",
+        "img": "../tienda/barra_10k.png",
+        "amount":1
+    },
+    {
+        "id": 8,
+        "name": "DISCOS",
+        "specificName": "Disco olimpico",
+        "price": 3000,
+        "size": "5kg",
+        "description": "Discos olimpicas para llevar con la barra",
+        "img": "../tienda/disco_5k.png",
+        "amount":1
+    },
+    {
+        "id": 23,
+        "name": "DISCOS",
+        "specificName": "Disco olimpico",
+        "price": 3000,
+        "size": "10Kg",
+        "description": "Discos olimpicas para llevar con la barra",
+        "img": "../tienda/disco_10k.png",
+        "amount":1
+    },
+    {
+        "id": 24,
+        "name": "DISCOS",
+        "specificName": "Disco olimpico",
+        "price": 3000,
+        "size": "15kg",
+        "description": "Pesas olimpicas para llevar con la barra",
+        "img": "../tienda/disco_15k.png",
+        "amount":1
+    },
+    {
+        "id": 25,
+        "name": "DISCOS",
+        "specificName": "Disco olimpico de 10kg",
+        "price": 3000,
+        "size": "20kg",
+        "description": "Pesas olimpicas para llevar con la barra",
+        "img": "../tienda/disco_20k.png",
+        "amount":1
+    },
+    {
+        "id": 9,
+        "name": "MANCUERNAS",
+        "specificName": "Mancuerna hexagonal",
+        "price": 2500,
+        "size": "5kg",
+        "description": "Mancuernas para completar tu set de barras y pesas",
+        "img": "../tienda/mancuerna_5k.png",
+        "amount":1
+    },
+    {
+        "id": 26,
+        "name": "MANCUERNAS",
+        "specificName": "Mancuerna hexagonal",
+        "price": 2500,
+        "size": "10kg",
+        "description": "Mancuernas para completar tu set de barras y pesas",
+        "img": "../tienda/mancuerna_10k.png",
+        "amount":1
+    },
+    {
+        "id": 27,
+        "name": "MANCUERNAS",
+        "specificName": "Mancuerna hexagonal",
+        "price": 2500,
+        "size": "15kg",
+        "description": "Mancuernas para completar tu set de barras y pesas",
+        "img": "../tienda/mancuerna_15k.png",
+        "amount":1
+    }
+]

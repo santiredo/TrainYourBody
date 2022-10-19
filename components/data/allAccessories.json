@@ -1,0 +1,92 @@
+[    
+    {
+        "id": 4,
+        "name": "GORRAS",
+        "specificName": "Gorra negra",
+        "price": 850,
+        "size": "Unico talle",
+        "description": "Gorras clasicas para llevar durante tus entrenamientos",
+        "img": "../tienda/gorra_negra.png",
+        "amount":1
+    },
+    {
+        "id": 16,
+        "": "GORRAS",
+        "snamepecificName": "Gorra blanca",
+        "price": 850,
+        "size": "Unico talle",
+        "description": "Gorras clasicas para llevar durante tus entrenamientos",
+        "img": "../tienda/gorra_blanca.png",
+        "amount":1
+    },
+    {
+        "id": 17,
+        "name": "GORRAS",
+        "specificName": "Gorra turquesa",
+        "price": 850,
+        "size": "Unico talle",
+        "description": "Gorras clasicas para llevar durante tus entrenamientos",
+        "img": "../tienda/gorra_turquesa.png",
+        "amount":1
+    },
+    {
+        "id": 5,
+        "": "CINTURONES",
+        "specificName": "Cinturon azul",
+        "price": 1800,
+        "size": "Unico talle",
+        "description": "Cinturones de powerlifting, ajustables a tu medida",
+        "img": "../tienda/cinturon_azul.png",
+        "amount":1
+    },
+    {
+        "id": 18,
+        "name": "CINTURONES",
+        "specificName": "Cinturon marron",
+        "price": 1800,
+        "size": "Unico talle",
+        "description": "Cinturones de powerlifting, ajustables a tu medida",
+        "img": "../tienda/cinturon_marron.png",
+        "amount":1
+    },
+    {
+        "id": 19,
+        "name": "CINTURONES",
+        "specificName": "Cinturon negro",
+        "price": 1800,
+        "size": "Unico talle",
+        "description": "Cinturones de powerlifting, ajustables a tu medida",
+        "img": "../tienda/cinturon_negro.png",
+        "amount":1
+    },
+    {
+        "id": 6,
+        "name": "MEDIAS",
+        "specificName": "Medias negras 3/4",
+        "price": 600,
+        "size": "Medida: 3/4",
+        "description": "Medias 3/4 para que te acompañen en tus entrenamientos",
+        "img": "../tienda/medias_negras.png",
+        "amount":1
+    },
+    {
+        "id": 20,
+        "name": "MEDIAS",
+        "specificName": "Medias azules 3/4",
+        "price": 600,
+        "size": "Medida: 3/4",
+        "description": "Medias 3/4 para que te acompañen en tus entrenamientos",
+        "img": "../tienda/medias_azules.png",
+        "amount":1
+    },
+    {
+        "id": 21,
+        "name": "MEDIAS",
+        "specificName": "Medias blancas 3/4",
+        "price": 600,
+        "size": "Medida: 3/4",
+        "description": "Medias 3/4 para que te acompañen en tus entrenamientos",
+        "img": "../tienda/medias_blancas.png",
+        "amount":1
+    }
+]
