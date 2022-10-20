@@ -1,7 +1,7 @@
 const getClothes = async () => {
     try {
-        const response = await fetch('../components/data/allClothes.json');
-        const dataClothes = await response.json();
+        const clothesResponse = await fetch('../components/data/allClothes.json');
+        const dataClothes = await clothesResponse.json();
 
         return dataClothes;
     } catch (error) {
@@ -16,8 +16,8 @@ const getClothes = async () => {
 
 const getAccessories = async () => {
     try {
-        const response = await fetch('../components/data/allAccessories.json');
-        const dataAccessories = await response.json();
+        const acccessoriesResponse = await fetch('../components/data/allAccessories.json');
+        const dataAccessories = await acccessoriesResponse.json();
 
         return dataAccessories;
     } catch (error) {
@@ -32,8 +32,8 @@ const getAccessories = async () => {
 
 const getElements = async () => {
     try {
-        const response = await fetch('../components/data/allElements.json');
-        const dataElements = await response.json();
+        const elementsResponse = await fetch('../components/data/allElements.json');
+        const dataElements = await elementsResponse.json();
 
         return dataElements;
     } catch (error) {
