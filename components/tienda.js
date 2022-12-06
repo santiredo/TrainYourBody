@@ -1,6 +1,4 @@
-import { mostrandoLaRopa, mostrandoLosAccesorios, mostrandoLosElementos, showAccessories, showClothes, showElements } from "../components/articles.js";
-import { accessories, clothes, elements } from "../components/stock.js";
-import { showAllClothes, showAllAccessories, showAllElements } from "../components/articles.js";
+import { showAccessories, showClothes, showElements } from "../components/articles.js";
 import { getCartInStorage } from "../components/storageCart.js";
 import { showAllItemsInCart } from "../components/cart.js";
 import { updateTotalCart } from "../components/updateCart.js";
@@ -8,16 +6,9 @@ import { updateTotalCart } from "../components/updateCart.js";
 
 
 document.addEventListener('DOMContentLoaded', () => {
-    showClothes(clothes);
-    showAccessories(accessories);
-    showElements(elements);
-    mostrandoLaRopa();
-    mostrandoLosAccesorios();
-    mostrandoLosElementos();
-    showAllClothes();
-    showAllAccessories();
-    showAllElements();
-    
+    showClothes();
+    showAccessories();
+    showElements();    
 
     // Aca agregue un operador avanzado
     function operadorAvanzado2() {
